@@ -1,0 +1,431 @@
+WORKING PAPER  ·  MARCH 2026
+From Simulation to Verification:
+The Case for Reclassifying Advanced Large Language Models
+as Artificial Simulated General Intelligence
+Tom Nelmes
+Founder & Chief Architect, Aletheia
+ABSTRACT
+The  field  of  artificial  intelligence  has  produced  systems  of  genuine  and 
+extraordinary capability — among the most significant technological achievements 
+in human history. This paper does not dispute that. It asks a prior question that the 
+dominant discourse has not addressed: on what epistemological foundation does 
+the knowledge within these systems rest? We argue that advanced large language 
+models  —  those  demonstrating  sustained  cross-domain  reasoning,  novel 
+synthesis, and general cognitive capability across multiple domains — operate as 
+Artificial  Simulated  General  Intelligence  (ASGI):  systems  that  reproduce  the 
+outputs of understanding without having acquired that understanding through any 
+verified,  independently  confirmable  process.  This  distinction  has  direct 
+consequences  for  reliability,  security,  and  the  ultimate  ceiling  of  machine 
+intelligence. We define ASGI, examine its implications, survey current paths  
+toward AGI through this lens, and identify a specific gap that no current approach  
+closes. We do not offer a complete solution. We offer a precise name for the 
+problem.
+1.  ESTABLISHING COMMON GROUND
+Before philosophy can be productive, definitions must be honest. The vocabulary of artificial 
+intelligence  has been stretched, marketed, and collapsed to the point where fundamental 
+distinctions are lost. This paper requires a shared foundation.
+Artificial Intelligence
+AI, in its current practical form, describes computational systems trained on large datasets to 
+perform  tasks  that  previously  required  human  cognition  —  language,  reasoning,  pattern 
+recognition, prediction. These systems achieve this through statistical learning at scale. They are 
+powerful. They are also something specific, and that specificity matters.
+© 2026 Tom Nelmes / Aletheia  ·  1
+Large Language Model (LLM)
+A large language model is a computational system trained on human-generated text at scale to 
+predict and generate language. Through this process it develops the capacity for reasoning, 
+synthesis, and cross-domain analysis that resembles general intelligence in its outputs. The term 
+describes the architecture and training methodology — not the epistemological status of the 
+knowledge produced. Not all LLMs are equivalent. A system that completes sentences within a 
+narrow domain is accurately described as narrow AI. This paper argues that the most capable 
+LLMs  —  those  demonstrating  sustained  cross-domain  reasoning  and  general  cognitive 
+performance across multiple domains — have crossed a threshold where the LLM label actively 
+misrepresents what the system is. A more accurate classification exists, and this paper proposes 
+it.
+Artificial General Intelligence
+AGI describes a hypothetical system capable of performing any intellectual task a human can — 
+not within a domain, but across all domains, including novel ones it was not explicitly trained for. 
+The operative word is general. It implies transfer, adaptability, and a foundation of knowledge 
+sufficient to support genuine novelty. AGI does not yet exist. Whether current architectures will 
+produce it through scaling remains genuinely uncertain. This paper argues that the uncertainty 
+runs deeper than the field has acknowledged.
+Artificial Superintelligence
+ASI describes a hypothetical system whose capabilities exceed human intelligence across all 
+domains. It is the logical extension of AGI and remains firmly theoretical. The epistemological 
+questions raised in this paper apply with compounding force to ASI: a superintelligence built on an 
+unverified foundation would be a superintelligence built on sand.
+The Question the Taxonomy Ignores
+The standard classification — ANI, AGI, ASI — measures capability. It asks what the system can 
+do and how broadly. It does not ask on what basis the system knows what it knows. This paper 
+argues that second question is not secondary. It is prior.
+2.  WHAT A LARGE LANGUAGE MODEL ACTUALLY IS
+To make the central argument, precision about the nature of large language models is required.
+The Compression Model
+A large language model is a compression of human-generated text. During training, the model 
+processes enormous quantities of written material and learns the statistical relationships between 
+words, concepts, and ideas as they appear in that corpus. The result is not a database. It is a 
+weighted map of relationships — a model of what tends to follow what, in the space of human 
+expression.
+© 2026 Tom Nelmes / Aletheia  ·  2
+An LLM does not know things the way a scientist knows things. It knows things the 
+way a very well-read person knows things — through what others have written 
+about them.
+This is a meaningful and useful form of knowledge. The well-read person has genuine insight, 
+reasons across domains, identifies connections specialists miss. But the well-read person also 
+inherits  the  errors,  biases,  and  blind  spots  of  everything  they  have  read  —  and  has  no 
+independent mechanism to verify most of what they know. Large language models have this 
+problem at civilization scale.
+The Citation Problem
+Every fact, relationship, and inference an LLM possesses was inherited from human-generated 
+text. The model’s entire knowledge base is, in a formal sense, second-hand — a citation of human 
+knowledge, not an independent acquisition of it. In most circumstances this is not a problem. In 
+some circumstances it is a profound one. The model has no internal mechanism to distinguish 
+between knowledge that has been rigorously verified and knowledge that has not. It presents both 
+with identical fluency and identical apparent confidence.
+The Confidence Problem
+An LLM cannot locate its own epistemic boundary from the inside. It can be prompted to express 
+uncertainty. It cannot genuinely know when it is wrong. When it fails, it fails with the same surface 
+texture as when it succeeds. This is not a fixable bug. It is a structural consequence of how these 
+systems acquire what they know. A system that cannot locate its own confidence boundary cannot 
+be fully trusted to know when it should not be trusted.
+The Capability Threshold
+Not all LLMs warrant reclassification. The ASGI classification applies specifically to systems that 
+demonstrate: sustained reasoning across multiple genuinely disparate domains simultaneously; 
+novel synthesis — connections between fields that the system can articulate and defend; adaptive 
+responses to problem framings with no direct precedent in training; and general cognitive 
+performance that is behaviorally indistinguishable from human expert reasoning across domains. 
+A small number of frontier systems currently operating meet these criteria. The systems below this 
+threshold remain accurately described as narrow AI or conventional LLMs. The threshold is real 
+even where the boundary is fuzzy at the margins.
+The Degrading Foundation
+The epistemological problem compounds as AI capability increases. As generative AI produces 
+more of the world’s written content, the proportion of AI-generated material in future training 
+corpora increases. A model trained partially on the outputs of earlier models inherits not just 
+human error but machine error — the confident hallucinations, the subtle biases, the systematic 
+gaps of its predecessors. The epistemological foundation does not merely fail to improve with 
+scale. It actively degrades as the provenance chain between training data and its original source 
+lengthens. This is not a future concern. It is occurring now.
+© 2026 Tom Nelmes / Aletheia  ·  3
+3.  THE SIMULATION ARGUMENT
+What Simulation Means
+Simulation, as used here, means the reproduction of the outputs of a process without the 
+execution of the process itself. A flight simulator produces the experience of flying without leaving 
+the ground. A weather model predicts atmospheric behavior without being the atmosphere. 
+Simulation is useful, often preferable to the real thing for specific purposes. It is not the same as 
+the thing it simulates.
+Large language models simulate understanding. They produce the outputs of understanding — 
+coherent responses, accurate predictions, meaningful connections — without executing the 
+process by which understanding is actually acquired. That process, for any intelligence that has 
+ever produced genuinely verified knowledge, requires some form of independent confirmation: 
+forming expectations, encountering feedback, and updating based on the gap between what was 
+predicted and what actually occurred.
+The Turing Trap
+The Turing test oriented the field toward behavioral performance as the measure of intelligence. 
+Its limitation is what it ignores: behavioral performance and epistemological foundation are 
+independent dimensions. A system can pass every behavioral test of intelligence while its 
+knowledge rests on an entirely unverified foundation. The test tells us what the system produces. 
+It tells us nothing about how it knows what it knows, or whether what it knows has ever been 
+independently confirmed.
+The Hard Ceiling
+Simulated intelligence has a ceiling that additional simulation cannot raise. That ceiling is novelty. 
+A system trained on the totality of human knowledge can recombine, interpolate, and extrapolate 
+within that knowledge with remarkable sophistication. What it cannot do is generate knowledge 
+that has no basis in its training distribution. True novelty — the discovery of something genuinely 
+unknown — requires a form of independent confirmation that produces unexpected results. The 
+result that contradicts the existing model. The observation that nothing in the training data could 
+have predicted.
+More simulation does not produce confirmed knowledge. It produces more simulation.
+A Note on Apparent Novelty
+Advanced ASGI systems do produce outputs that appear novel: unexpected connections, 
+synthesis that no human has explicitly articulated before, insights that feel generative rather than 
+reproductive. This is real and valuable. It is recombination and interpolation at extraordinary scale 
+and sophistication.
+It is not the same as confirmed discovery. A scientist who makes a novel discovery can trace the 
+reasoning, reproduce the result, show their working, and explain what surprised them and why. An 
+ASGI system producing an apparently novel output has none of those things available — not 
+because the output is necessarily wrong, but because the mechanism that produced it is opaque 
+even to the system itself.
+© 2026 Tom Nelmes / Aletheia  ·  4
+The problem is not only that an ASGI system may produce outputs that are wrong. It is that an 
+ASGI  system  cannot  reliably  distinguish  between  a  genuine  insight  and  a  sophisticated 
+confabulation — and neither can the person relying on it, without independent confirmation. This 
+opacity is the load-bearing problem. It is why the classification matters most precisely where the 
+outputs appear most impressive.
+4.  INTRODUCING ASGI
+Why a New Term
+Artificial General Intelligence carries an implicit promise: that the intelligence it describes is 
+general in a meaningful sense. General implies transfer, adaptability, and a foundation sufficient 
+to  support  genuine  novelty.  The  structural  difference  between  knowledge  that  has  been 
+independently confirmed and knowledge that has been inherited from human text is not a 
+quantitative gap. It is a categorical one. Describing frontier systems as approaching AGI implies 
+the path from here is a matter of scale. This paper argues that assumption deserves challenge.
+ASGI Defined
+Artificial Simulated General Intelligence (ASGI) describes any system that demonstrates broad 
+cognitive capability across multiple domains while acquiring its knowledge through training on 
+human-generated data rather than through any independently confirmable process — and 
+possessing no internal mechanism to distinguish between the two.
+A small number of frontier large language models currently meet this definition. Not all LLMs do. 
+The classification applies where the capability is genuinely general — sustained cross-domain 
+reasoning, adaptive synthesis, expert-level performance across multiple fields simultaneously. 
+This is not a failure. It is a precise description of what these systems are and, critically, what they 
+are not.
+ASGI is itself a spectrum. At one end sit conventional LLMs — capable, useful, accurately 
+described by existing taxonomy. At the other end sit frontier systems whose general capability is 
+genuine  and  whose  epistemological  limitations  are  correspondingly  consequential.  The 
+reclassification applies at the frontier end of that spectrum.
+The Revised Spectrum
+— Artificial Narrow Intelligence (ANI) — capable within a specific domain, no meaningful 
+transfer
+— Large Language Model (LLM) — broad language capability, useful synthesis, below the 
+general reasoning threshold
+— Artificial Simulated General Intelligence (ASGI) — broad general capability across 
+domains, knowledge rests on inherited simulation without any independently confirmable 
+grounding
+— Artificial General Intelligence (AGI) — broad capability, knowledge rests on a confirmed, 
+independently verifiable foundation
+© 2026 Tom Nelmes / Aletheia  ·  5
+— Artificial Superintelligence (ASI) — capability exceeding human intelligence across all 
+domains
+On this spectrum, the question is not only how capable is the system, but on what foundation does 
+that capability rest. ASGI and AGI may be behaviorally indistinguishable in many circumstances. 
+They are not epistemologically equivalent.
+5.  THE EPISTEMOLOGICAL PROBLEM
+This is the central section of the paper.
+How Confirmed Knowledge Differs
+There is a difference between knowing something because you have been told it, and knowing 
+something  because  you  have  confirmed  it.  This  distinction  is  ancient  in  philosophy  and 
+foundational in science. It is the difference between inherited belief and earned knowledge. The 
+question this paper raises is simple: which kind does an LLM possess?
+The answer is the former. Every claim an LLM makes rests on what humans have written. Not on 
+what has been tested. Not on what has been confirmed. On what has been written. These overlap 
+significantly. They are not identical. And at the margins — in novel domains, contested areas, and 
+anywhere deliberate manipulation is possible — the gap between them is where everything 
+important happens.
+The Poisoning Problem
+If the training corpus contains systematically false information — through honest error, ideological 
+bias, or deliberate manipulation — the model will reproduce that false information with identical 
+fluency and confidence as accurate information. It has no independent check. It cannot detect the 
+corruption. It will defend it when challenged, apply it to new situations, and present it as 
+knowledge.
+You cannot poison what was independently confirmed. You can only poison what 
+was told.
+This is not a theoretical concern. Training data provenance is genuinely difficult to verify at the 
+scale required for frontier models. As generative AI becomes more capable, the proportion of AI-
+generated content in the information environment increases — content that may itself encode the 
+errors of earlier models, compounding across generations without detection. Each generation of 
+models trained on AI-generated content inherits and amplifies the errors of its predecessors. The 
+epistemological foundation does not stabilise with scale. It compounds in its unreliability.
+The Academic Alarm
+The poisoning problem is no longer theoretical. It is arriving in university classrooms and 
+research institutions faster than the field has been able to respond.
+Academics across disciplines are sounding a genuine alarm. AI-generated papers and 
+submissions are proliferating at a rate that detection tools cannot reliably match. The more 
+capable the system, the more convincing the output — and the more deeply the errors within it 
+© 2026 Tom Nelmes / Aletheia  ·  6
+are obscured by fluency. A poorly written fabrication is easy to identify. A confidently written, 
+stylistically coherent paper whose citations are subtly wrong, whose methodology is plausible 
+but flawed, and whose conclusions rest on inherited assumptions rather than independent 
+analysis is genuinely difficult to distinguish from legitimate scholarship.
+The deeper problem is not fraud. It is contamination. Academic literature is one of the primary 
+sources from which future AI systems will be trained. Papers generated by ASGI systems — 
+carrying their inherited errors, their undetected biases, their confabulated citations — are 
+entering the corpus that will train the next generation of models. Those models will inherit the 
+errors as if they were established knowledge, reproduce them with the same confident fluency, 
+and pass them forward again.
+This is the compounding failure the field has not yet fully reckoned with. The knowledge base 
+does not merely fail to improve. It degrades. Each generation of models trained on AI-assisted 
+academic output inherits a corpus that is fractionally less reliable than the one before it — and 
+has no mechanism to detect the difference. The simulation becomes, incrementally, a 
+simulation of a simulation. The distance from any original confirmed source grows with every 
+iteration.
+The professors raising the alarm are identifying a symptom. The ASGI classification names the 
+disease.
+Questions the Field Has Not Answered
+How does a system trained entirely on human-generated text know which parts of that text are 
+accurate? How does it locate the boundary between what is known and what is assumed? How 
+does it detect when its simulation has quietly diverged from what is actually true? How does it 
+defend itself against a training corpus that has been manipulated?
+Where, precisely, is the knowledge grounded? Every current approach — however sophisticated 
+— ultimately traces back to a corpus that was assembled by humans, reflects the biases and 
+errors of its sources, and contains no independent mechanism for distinguishing confirmed 
+knowledge from plausible-sounding inherited assumption.
+These are not engineering questions waiting for better architecture. They are epistemological 
+questions about the nature of the knowledge itself. The field has not answered them. In most 
+cases, it has not asked them.
+6.  THE CURRENT ROAD TO AGI: AN HONEST ASSESSMENT
+The researchers and institutions working on the following approaches are doing serious work on 
+genuinely difficult problems. This section examines each through the lens this paper has 
+developed — not to diminish the work, but to ask a specific question of each: does it address the 
+epistemological foundation, or does it proceed without one?
+Scaling
+More compute, more parameters, more data. The approach has produced extraordinary results 
+and remains dominant. Its epistemological limitation is structural: more training data means more 
+© 2026 Tom Nelmes / Aletheia  ·  7
+inherited knowledge, more citations, more simulation. A model trained on ten times the data 
+inherits ten times as many unverified claims. The poisoning attack surface expands in proportion 
+to the ambition. Where, in a larger corpus, is the knowledge more confirmed than in a smaller one? 
+Scale does not answer that question. It makes it larger.
+Multimodal and Vision Models
+Training on images alongside text represents a further attempt to extend the knowledge base. The 
+epistemological limitation applies equally: a photograph of a result is not the result. A model 
+trained on images of experiments inherits the visual representation of those experiments — not 
+the measurement, the instrument error, the unreported failed trials, or the gap between what the 
+image shows and what actually occurred. The simulation expands. The confirmation question 
+remains unanswered.
+Reinforcement Learning from Human Feedback
+RLHF shifts the feedback source from corpus text to human evaluators. An improvement in some 
+respects. Human evaluators can assess whether a response seems correct; they generally 
+cannot assess whether it is correct against any independent standard. The feedback is better 
+calibrated. Its ultimate source is still human judgment, subject to the same biases, errors, and 
+limitations as the corpus it supplements. In contested domains, RLHF may systematically encode 
+consensus over accuracy. These are not equivalent.
+Video-Based World Models
+Training on video rather than text represents the most serious architectural challenge to the 
+LLM paradigm currently being pursued. The argument is that observation of the world — even 
+recorded observation — grounds knowledge more reliably than language alone. A system that 
+watches objects fall, liquids flow, and structures collapse builds internal representations of 
+physical behavior that no text description fully captures. This is a genuine advance in how the 
+question is being asked.
+The epistemological problem migrates rather than resolves.
+A system that learns abstract representations from video of the world is still learning from 
+representations. The video is not the world. It is a recording of a slice of the world, selected, 
+captured, and compiled by humans, carrying every limitation of its source. The model builds 
+internal predictions about likely continuations — more sophisticated than token prediction, less 
+noisy than pixel prediction, but still prediction from inherited patterns rather than confirmation 
+from independent results.
+The proponents of this approach are aware of the limitation. The co-founder of the most heavily 
+funded world model company currently operating wrote in their own funding announcement that 
+systems trained by self-supervised learning on observed data "mimic intelligence" rather than 
+genuinely understanding the world. That sentence was written as a criticism of LLMs. It applies 
+with equal precision to a system that learns by predicting abstract representations of video.
+The question this paper asks — where is the knowledge confirmed, and how does the system 
+distinguish a genuine causal model from a sophisticated pattern that fits its training data — is 
+© 2026 Tom Nelmes / Aletheia  ·  8
+not answered by predicting what should come next in a video sequence. It is restated in more 
+interesting language.
+More sophisticated simulation does not produce confirmed knowledge. It produces more 
+sophisticated simulation.
+The Remaining Gap
+Each approach addresses real limitations. None directly answers the epistemological foundation 
+question. The field is asking how to make simulation more capable, more accurate, more aligned 
+with human judgment. Those are valuable questions. But improved simulation, however far it is 
+taken, does not produce confirmed knowledge. It produces better simulation.
+The gap between ASGI and genuine AGI is not a capability gap. It is not a scale gap. It is a gap in 
+the nature of the knowledge the system possesses — in whether that knowledge rests on 
+something  that  has  been  independently  confirmed,  or  only  on  what  has  been  inherited, 
+accumulated, and passed forward without any mechanism for verification.
+That question — where is the knowledge actually grounded? — is the question this paper is 
+asking. It has not been answered. It has barely been asked.
+7.  IMPLICATIONS
+The epistemological foundation of machine intelligence is not an academic question. It determines 
+what can be trusted, what can be built on, and what the long-term trajectory of these systems will 
+be.
+Trust and Verifiability
+A system whose knowledge rests on a confirmed, independently auditable foundation offers 
+something qualitatively different from a system whose knowledge rests on inherited text. It knows 
+where its knowledge ends. It can report its confidence boundary with genuine precision. The 
+person relying on it knows what the system knows and, critically, what it does not. That is the 
+foundation on which real trust can be built — not behavioral fluency, but traceable provenance.
+High-Stakes Deployment
+The contexts where ASGI systems are most confidently deployed are precisely the contexts 
+where the confidence problem is most dangerous. A physician using AI for diagnosis, a lawyer 
+using AI for case research, an engineer using AI for structural calculations — these applications 
+involve consequential decisions where the system’s inability to locate its own epistemic boundary 
+is not a theoretical concern. It is a direct patient safety, legal liability, or structural integrity issue.
+This is not an argument against deployment. It is an argument for honest classification. A system 
+deployed in a high-stakes context should be understood for what it is: a system of extraordinary 
+capability resting on a knowledge foundation that is inherited, unconfirmed, and opaque about its 
+own limits. That understanding should inform how it is used, what decisions it is permitted to make 
+alone, and what independent verification it requires before its outputs are acted upon.
+© 2026 Tom Nelmes / Aletheia  ·  9
+Alignment and the Unconfirmed Foundation
+AI alignment research attempts to ensure that advanced AI systems pursue goals that are 
+beneficial to humanity. Much of this work assumes the knowledge base of the system is 
+essentially sound — that the problem is ensuring the system pursues the right objectives with the 
+knowledge it has. The ASGI classification raises a prior question: what if the knowledge base itself 
+is systematically unreliable in ways the system cannot detect?
+A system optimizing powerfully toward a goal based on knowledge that has been subtly corrupted 
+— through training data manipulation, through the compounding errors of AI-generated training 
+content, through the systematic biases of the corpus it inherited — is a different alignment problem 
+than the field has primarily addressed. Confirmed knowledge is not merely a reliability question. It 
+is a prerequisite for meaningful alignment.
+Scientific Discovery
+AI systems applied to scientific hypothesis generation and experimental design inherit the errors, 
+biases, and blind spots of the literature on which they were trained. Replication crises, publication 
+bias, and the systematic under representation of null results mean that the training corpus for 
+scientific AI is not a neutral representation of what is known. A system that could distinguish 
+between claims inherited from a literature it cannot audit and claims that have been independently 
+confirmed would represent something genuinely new. Not better simulation of science. A different 
+epistemological category entirely.
+Equality of Access to Truth
+The most powerful AI systems are controlled by a small number of organizations that choose what 
+is included in training. This is not necessarily sinister — curation at scale is genuinely difficult. But 
+it means the epistemological foundation of the most powerful systems is shaped by choices that 
+are not transparent and not easily audited by those who rely on them. A knowledge architecture in 
+which the basis for claims can be independently examined and confirmed would distribute 
+epistemic authority differently. The ground truth would not be whoever assembled the corpus.
+The Stakes
+These systems are being deployed in hospitals, courtrooms, laboratories, and institutions that 
+affect the lives of billions of people. The epistemological foundation of those systems is not an 
+abstraction. Getting it right matters. Naming it correctly is where getting it right begins.
+8.  A NOTE ON NAMING
+ASGI is not offered as a criticism of the work that produced current AI systems. It is offered as an 
+honest label for what that work has produced — so that the distance from here to genuine general 
+intelligence can be measured accurately, and so that the work required to close that distance can 
+be identified clearly.
+The systems described in this paper as ASGI are extraordinary achievements. They deserve a 
+name that is accurate. An accurate name tells us both what they are and what they are not.
+© 2026 Tom Nelmes / Aletheia  ·  10
+What they are not is a system whose knowledge has been independently confirmed. No current 
+system is. No current road map has a clear answer for how to build one. The field has asked how 
+to make simulation more capable. It has not yet seriously asked how to confirm what the 
+simulation knows.
+The intelligence we have built is simulated. The intelligence we need is confirmed. 
+These are not the same thing, and the difference between them is not a matter of  
+scale.
+That  question  —  how  does  a  machine  intelligence  acquire  knowledge  that  has  been 
+independently confirmed, and how does it know the difference — is the question this paper is 
+asking. It has not been answered. It has barely been asked.
+The systems this paper reclassifies as ASGI are not diminished by the label. They are accurately 
+described by it. An honest name for what a thing is creates the conditions for building what it is not 
+yet. That is the only purpose of this paper.
+At  Aletheia  we  are  working  on  ASI  alignment,  philosophy,  epistemology,  verification,  and 
+engineering angles completely different to the current status quo across the board — while using 
+the astronomical achievements of the people making these phenomenal ASGI platforms for the 
+future of ASI and the betterment of humanity.
+Tom Nelmes
+Founder & Chief Architect  ·  Aletheia  ·  March 2026
+© 2026 Tom Nelmes / Aletheia  ·  11
+KEY DEFINITIONS
+Artificial Narrow Intelligence (ANI)
+AI capable within a specific domain, no meaningful transfer to other domains.
+Large Language Model (LLM)
+A computational system trained on human-generated text at scale. Capable of sophisticated language tasks and useful 
+synthesis. Below the threshold of general cross-domain cognitive capability that warrants ASGI reclassification.
+Artificial Simulated General Intelligence (ASGI)
+AI demonstrating broad general cognitive capability across multiple domains whose knowledge rests on inherited 
+simulation rather than any independently confirmable process — and possessing no internal mechanism to distinguish 
+between the two. A small number of frontier large language models currently meet this definition.
+Artificial General Intelligence (AGI)
+Hypothetical AI with broad capability whose knowledge rests on a confirmed, independently verifiable foundation.
+Artificial Superintelligence (ASI)
+Hypothetical AI exceeding human capability across all domains.
+The Citation Problem
+The structural condition whereby an LLM’s knowledge is entirely inherited from human-generated text and therefore 
+only as reliable as the least trustworthy step in its provenance chain.
+The Poisoning Attack Surface
+The vulnerability of text-trained systems to deliberate or accidental corruption of their knowledge base through 
+manipulation of training sources — compounding across generations as AI-generated content enters future training 
+corpora.
+The Capability Threshold
+The  point  at  which  an  LLM’s  demonstrated  general  cognitive  capability  across  multiple  domains  warrants 
+reclassification as ASGI. Defined by sustained cross-domain reasoning, novel synthesis, adaptive response to 
+genuinely novel problem framings, and expert-level performance across multiple fields simultaneously.
+Simulated Knowledge
+Knowledge acquired through training on human-generated representations, inherited rather than independently 
+confirmed.
+Confirmed Knowledge
+Knowledge whose basis can be independently examined, reproduced, and audited — where the confidence it carries 
+reflects something more than the frequency with which it appeared in a training corpus.
+This paper may be shared freely with attribution.
+© 2026 Tom Nelmes - Aletheia
+© 2026 Tom Nelmes / Aletheia  ·  12

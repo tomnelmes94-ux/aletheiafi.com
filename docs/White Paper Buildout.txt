@@ -1,0 +1,422 @@
+This is going to be a substantial document. Let me build it properly. 
+ 
+THE GENESIS COMPANION WHITE PAPER LIBRARY 
+A complete specification of the technical, governance, and infrastructure documents that 
+accompany The Genesis Civilisation Papers 
+ 
+PAPER 6 COMPANIONS 
+ 
+THE GENESIS CONSTITUTION AND BINDING GOVERNANCE LAWS 
+3 papers 
+Paper 1: The Constitution 
+The founding document of Genesis Monetary Systems. The four neutrality criteria as 
+constitutional law. The non-profit structure codified in binding legal terms. The prohibition on 
+political donations, country donations, company donations, and individual donations — 
+constitutional, unamendable, enforceable across generations. The salary framework — the 
+global GDP per capita standard codified. The democratic governance structure across councils 
+and participating nations. The mechanisms by which the constitution can be reviewed but not 
+captured. The legal architecture that makes the guarantee auditable rather than asserted. 
+Paper 2: The Binding Laws 
+The operational laws that govern Genesis’s day-to-day function. Conflict of interest protocols. 
+Council member independence requirements. The blind audit legal framework. Investment and 
+equity acquisition rules. The offtake contract legal standards. Employment law within Genesis. 
+Whistleblower protections. The legal relationship between Genesis and participating nations. 
+How disputes are resolved. The jurisdiction question — where Genesis is legally domiciled and 
+why. 
+Paper 3: Capture Prevention Architecture 
+The specific structural mechanisms designed to prevent Genesis from being captured by any 
+individual, nation, corporation, or ideology across generations. Term limits for all positions. 
+Mandatory diversity requirements across councils. The supermajority requirements for 
+constitutional amendment. The automatic dissolution triggers if constitutional violations are 
+confirmed. The independent oversight body and its mandate. What happens to Genesis assets 
+if the organisation is dissolved. The succession architecture that preserves the mission beyond 
+any individual. 
+ 
+THE VAULT — FULL TECHNICAL SPECIFICATION 
+4 papers 
+Paper 1: Assessment Methodology 
+The complete technical framework for valuing every category of asset in the Vault. Corporate 
+valuation methodology — verified productive output, documented revenue, physical 
+infrastructure assessment, the specific exclusions of IP and speculative earnings. Land 
+valuation — the productive output model versus transaction price, soil quality measurement, 
+agricultural yield verification, long-term fertility assessment. Raw material reserve valuation — 
+the scarcity value methodology, the primary valuation question applied in practice, how the Vault 
+values resources the current system treats as worthless until extracted. Government asset 
+assessment. Personal asset capture through tax documentation. The data sources — satellite 
+systems, national tax records, geological surveys, agricultural databases — and how they are 
+weighted and combined. 
+Paper 2: Ecological Systems Valuation 
+The methodology for valuing what no financial system has ever counted. Freshwater systems — 
+the economic dependency model, how downstream agricultural and industrial value is attributed 
+to the water system sustaining it. Forest systems — water regulation value, carbon 
+management value, soil protection value, climate stabilisation value. Atmospheric stability — the 
+economic cost methodology for degradation scenarios applied inversely to quantify 
+maintenance value. Ocean systems, soil fertility, biodiversity in agricultural ecosystems. The 
+philosophical and technical argument for why these are economic infrastructure assets rather 
+than environmental goods. The full calculation methodology for each category. 
+Paper 3: Verification Protocols 
+How the Vault assessment is verified, audited, and maintained over time. The Genesis satellite 
+assessment framework in full technical specification — what satellites, what data, what refresh 
+frequency. Ground truth verification — the on-the-ground teams, their methodology, their 
+independence requirements. The resource creation incentive verification process — how new 
+planetary assets are confirmed, certified, and added to the Vault. The continuous monitoring 
+systems that detect Vault shrinkage in real time — deforestation, pollution, resource depletion. 
+The audit cycle. Who can challenge a Vault assessment and through what process. The appeals 
+framework. 
+Paper 4: Disputed Assets Framework 
+The complete legal and technical framework for handling assets subject to territorial dispute, 
+historical claim, or contested sovereignty. The unallocated holding mechanism in full. What 
+triggers an asset being placed in unallocated status. The criteria for resolution and allocation. 
+The framework for handling assets that span national boundaries — river systems, aquifers, 
+atmospheric corridors. How indigenous land rights are treated. The interface between Genesis 
+Vault assessment and international law. Case studies — the Nubian Aquifer spanning four 
+nations, contested maritime zones, transboundary forest systems. 
+ 
+GENESIS COIN — BACKING AND ISSUANCE MECHANICS 
+3 papers 
+Paper 1: The Backing Architecture 
+The complete technical specification of how Genesis Coin is backed by Vault assets. The ratio 
+framework — what quantity of Genesis Coin is issued per unit of verified Vault value. How 
+appreciation in the Vault asset base translates to Genesis Coin appreciation. The reserve 
+architecture — what Genesis holds, in what form, accessible to whom under what conditions. 
+The audit mechanism that makes the backing relationship verifiable by any participant in real 
+time. The blockchain ledger that records every Coin issued and the specific Vault asset backing 
+it. The independence of the backing verification from Genesis management — the structural 
+separation that prevents internal manipulation of the backing ratio. 
+Paper 2: Issuance Mechanics 
+The precise process by which new Genesis Coin enters circulation. The verification trigger — 
+what constitutes confirmed new Vault value sufficient to back new issuance. The issuance 
+request process for resource creation certificate holders. The time delay between Vault addition 
+and Coin issuance — the verification window and why it exists. The anti-inflation architecture — 
+the hard limits on issuance rates regardless of Vault growth velocity. Genesis Bonds — the full 
+technical specification of the instrument through which individuals, institutions, and sovereign 
+wealth funds hold verified claims on planetary asset value growth. The bond issuance 
+mechanics, the redemption framework, the appreciation calculation methodology. 
+Paper 3: The Last Time Fiat Loan — Full Technical Specification 
+The complete legal, financial, and operational framework for the Last Time Fiat Loan 
+mechanism. The contractual structure — what the participating nation signs, what Genesis 
+commits to, what is irrevocable. The repayment schedule calculation methodology for different 
+national economic capacities. The permanent destruction mechanism — the technical process 
+by which every repaid unit is verifiably eliminated from existence. The blockchain record of 
+destruction. The audit trail. The 500-year US timeline calculation in full. The India, Brazil, and 
+Poland calibrations. How the three tranches are deployed — debt retirement, pension bond 
+conversion, reinvestment allocation. The contractual protections against future governments 
+attempting to renegotiate or exit. The force majeure provisions. 
+ 
+THE REDEMPTION FUND — FULL BOND MECHANICS 
+2 papers 
+Paper 1: Redemption Bond Architecture 
+The complete technical specification of the Redemption Bond instrument. How existing 
+sovereign debt is assessed, verified, and restructured. The independent assessment process — 
+who conducts it, what methodology, what the outputs are. The One-Time Interest Bond 
+calculation — the precise methodology for determining 50% of total debt obligation and the 
+verification of that figure. The Redemption Bond repayment schedule — how the nation’s 
+verified economic capacity determines the timeline and the annual payment. The contractual 
+terms — what the nation commits to, what Genesis commits to, what cannot be renegotiated. 
+The secondary market for Redemption Bonds — whether they can be traded and under what 
+conditions. The default mechanism — what happens if a nation fails to make its Redemption 
+Bond payment. 
+Paper 2: Worked Examples in Full 
+The complete arithmetic for every nation examined in Paper 6 and Paper 10. The UK calculation 
+in full — £2.95T official debt, £5.4-5.6T real obligations, the One-Time Interest Bond calculation, 
+the Redemption Bond annual payment, the 50% reinvestment return timeline, the annual saving 
+against current interest burden, the 450-year repayment schedule. The US calculation in full — 
+$39T debt, $150T Last Time Fiat Loan, the three-tranche deployment, the $300B annual 
+repayment, the $2.55T annual saving. India, Brazil, Poland in full. Japan — the most complex 
+case, with ¥122.3T total budget and 88-90% consumed by social security and debt service. An 
+additional ten nation examples spanning every development level and every major economic 
+region. 
+ 
+THE CLEARING HOUSE — OPERATIONAL ARCHITECTURE 
+3 papers 
+Paper 1: Technical Infrastructure 
+The complete blockchain and distributed ledger specification underlying the Clearing House. 
+The consensus mechanism — how transaction validity is confirmed across the distributed 
+network. Settlement time architecture — the target measured in minutes, the technical systems 
+that achieve it. The cryptographic security framework. The node structure — who operates 
+Clearing House nodes, what the requirements are, how independence is maintained. The 
+redundancy architecture — what happens if nodes fail, if regions go offline, if cyberattacks are 
+attempted. The transaction fee calculation and distribution mechanism — where the fee goes, 
+how it is set, why it cannot be manipulated. The interface with existing banking infrastructure — 
+how commercial banks connect to the Clearing House without rebuilding their systems. 
+Paper 2: Reserve and Settlement Mechanics 
+The complete operational specification for how the Clearing House manages national reserves 
+and settles international transactions. The reserve calculation methodology for every 
+participating nation — the trade position assessment, the 50% above deficit/surplus buffer 
+calculation, how it is updated. The pre-funding mechanism — how nations deposit into their 
+Clearing House reserves, in what instruments, at what frequency. The real-time settlement 
+process for a transaction — every step from payment initiation through Genesis Coin conversion 
+through delivery to recipient currency, with timing specifications. The surplus nation mechanics 
+— how Genesis Coin accumulates in sovereign vaults as a reserve asset. The deficit 
+management framework — what triggers a reserve top-up requirement, what the consequences 
+of reserve depletion are. The exchange rate determination methodology — the mathematical 
+relationship between each currency and Genesis Coin derived from Vault assessment. 
+Paper 3: Governance and Enforcement 
+The institutional architecture governing the Clearing House’s operation. The independence 
+structure — how Clearing House governance is separated from Genesis management. The 
+breach detection system — how contractual violations are identified in real time. The graduated 
+response framework — warning, restriction, suspension, exclusion — and the criteria for each. 
+The re-admission process after exclusion. The appeals mechanism. The relationship between 
+Clearing House governance and the Genesis Constitution. The framework for adding new 
+participating nations. The process for upgrading the technical infrastructure without disrupting 
+settlement operations. The international legal framework governing Clearing House contracts. 
+ 
+THE FULL RESERVE TRANSITION — 40-YEAR SPECIFICATION 
+2 papers 
+Paper 1: The Transition Mechanics 
+The complete technical specification of the 40-year fractional reserve wind-down. The starting 
+position for each participating nation — current reserve ratios, current broad money supply, 
+current base money. The 5% reduction schedule — precise timing, precise calculation of gap 
+created at each step, precise Genesis-backed currency issuance to fill each gap. How the 
+replacement currency is issued — the Vault backing requirement for each tranche of new 
+currency, the issuance process, the audit trail. The anti-deflation safeguards — the mechanisms 
+that prevent the transition from contracting money supply and triggering economic contraction. 
+The banking sector transition — how commercial banks adapt their business models as the 
+lending multiplier is progressively reduced. The capital adequacy requirements during transition. 
+Paper 2: Credit Architecture in a Full Reserve World 
+What lending looks like when fractional reserve banking has been eliminated. The 
+savers-to-borrowers intermediation model in full. How banks fund their lending books from 
+genuine deposits and investment capital rather than manufactured money. The credit availability 
+analysis — who can borrow, at what rates, under what conditions, compared to the current 
+system. The systemic risk reduction — the quantified reduction in interconnected failure risk 
+when bank lending is backed by real capital. The transition of shadow banking — what happens 
+to money market funds, repo markets, and other quasi-banking instruments during the 
+transition. The international dimension — how the transition interacts with nations still operating 
+fractional reserve systems outside the Genesis framework. 
+ 
+THE SCORING SYSTEM AND BLIND AUDIT — FULL FRAMEWORK 
+2 papers 
+Paper 1: The Scoring Methodology 
+The complete technical specification of how national performance is scored. Every input metric 
+defined precisely — budget transparency verification, infrastructure level progress 
+measurement, baseline human needs provision indicators, productive versus extractive capital 
+deployment assessment, Vault asset maintenance monitoring, corporate conduct within borders. 
+The weighting of each metric. How scores aggregate to a total. How scores translate to 
+allocation percentages — the precise relationship between score and 50% reinvestment return, 
+between score and GAE allocation. The scoring frequency — how often scores are updated, 
+what triggers an out-of-cycle reassessment. The historical scoring archive — how scores are 
+recorded and made publicly accessible. The relationship between the scoring system and the 
+Vault — how Vault shrinkage from environmental destruction automatically flows into the score. 
+Paper 2: The Blind Audit Process 
+The complete operational specification of the blind audit mechanism. How national data is 
+collected, anonymised, and scaled. The anonymisation methodology — what identifying 
+characteristics are removed, how the scaling works to disguise country size, what the auditors 
+see and don’t see. The auditor selection process — independence requirements, credential 
+verification, conflict of interest protocols, geographic distribution. The three-auditor structure for 
+each submission — how outlier scores are handled, how reconciliation works. The infrastructure 
+level calibration — how the same score is contextualised differently for a Level 1 nation versus a 
+Level 4 nation. The publication process — how results are disclosed, in what order, with what 
+accompanying analysis. The challenge mechanism — how a nation can contest its score and 
+through what process. 
+ 
+THE GLOBAL AVERAGE EQUALIZER — DISTRIBUTION MECHANICS 
+1 paper 
+The GAE Full Specification 
+The complete technical and operational framework for the GAE pool and its distribution. The 
+pool accumulation mechanism — how 20% of every One-Time Interest Bond flows into the 
+GAE, the timeline, the total projected pool size at different participation levels. The outcome 
+metrics in full technical specification — school enrolment measurement methodology, clean 
+water access verification, electricity connectivity confirmation, infant mortality data collection, the 
+blockchain recording of each verified outcome. The performance-based allocation algorithm — 
+the precise mathematical relationship between verified outcomes and GAE share. The 
+distribution timing — how frequently GAE allocates, what the payment process is, how funds 
+reach recipient governments. The anti-gaming architecture — the safeguards that prevent 
+nations from manipulating outcome data to increase their GAE share. The verification 
+partnership with independent international health, education, and infrastructure monitoring 
+organisations. 
+ 
+GENESIS PENSION BONDS — FULL SPECIFICATION 
+1 paper 
+The Genesis Pension Bond Technical Specification 
+The complete instrument specification for Genesis Pension Bonds. The legal structure — what 
+the bond represents, who issues it, what the holder’s claim is. The backing architecture — the 
+specific Vault assets designated as pension bond collateral, the ring-fencing that prevents those 
+assets being used for other purposes. The appreciation calculation — how 3% annual growth on 
+$60T generates $1.8T matching US Social Security requirements, the verification methodology, 
+the payment process. The conversion mechanism — how existing unfunded pension obligations 
+are converted into Genesis Pension Bond holdings, what the holder receives, what their rights 
+are. The redemption framework — how pension payments are made from bond appreciation, 
+the payment process, the timing. The extension to other nations — the calculation framework for 
+applying the pension bond mechanism to UK state pension obligations, Japanese social 
+security, and every other nation’s unfunded liability. The individual participation pathway — how 
+ordinary citizens can hold Genesis Pension Bonds as personal retirement savings. 
+ 
+PAPER 8 COMPANIONS 
+ 
+AFRO COIN — FULL FRAMEWORK 
+3 papers 
+Paper 1: The Case for Afro Coin 
+Why Africa needs its own monetary instrument alongside Genesis Coin. The specific economic 
+dynamics of a continent with half a billion people in planned new cities, the world’s 
+fastest-growing population, the highest reproductive rates, and the resource base the Genesis 
+programme is activating. The relationship between Afro Coin and Genesis Coin — Afro Coin as 
+a regional instrument backed by African Vault assets, appreciating with African productive 
+capacity, serving as the daily transactional currency for the new cities. The argument that the 
+continent that has been most damaged by the extractive monetary architecture of the current 
+system deserves a monetary instrument designed specifically for its conditions and its future. 
+Paper 2: Afro Coin Technical Architecture 
+The issuance mechanism — how Afro Coin is issued against verified African Vault assets. The 
+backing calculation — the specific African assets that back the instrument. The relationship to 
+Genesis Coin — the exchange mechanism, the appreciation correlation, the independence in 
+day-to-day operation. The Clearing House integration — how Afro Coin settles within the 
+Genesis Clearing House framework. The desalination pricing mechanism — how the Afro Coin 
+architecture incorporates the water pricing model from Paper 8. The resource creation incentive 
+— how African companies creating new natural resources earn Afro Coin-denominated returns. 
+Paper 3: Implementation and Transition 
+How Afro Coin is introduced to the new cities and to participating African nations. The 
+sequencing — which cities and nations adopt it first, how adoption spreads. The relationship 
+with existing African currencies — the CFA franc, the rand, the naira — and the voluntary 
+migration pathway. The governance of Afro Coin — who manages it, how independence is 
+maintained, the constitutional protections. The long-term vision — Afro Coin as the monetary 
+foundation of the wealthiest continent on earth, valued honestly for the first time in history. 
+ 
+THE FOUR REMAINING CITIES 
+4 series, each 10 papers following the Gaia structure 
+Each city series follows the same ten-paper structure as Gaia: 
+Mission — Site — Problems — Design — Materials and Logistics — Engineering — 
+Governance — Economy — Population — Future. 
+City 2: South America — Provisionally sited interior Brazil or Colombia. The Amazon boundary 
+question. The Atlantic and Pacific HSR corridor connections. The Spanish and Portuguese 
+language integration. The resource base — lithium in the Andes, agricultural productivity of the 
+interior, the Atlantic fishing economy. 
+City 3: Asia — Provisionally sited in a high-growth corridor identified through satellite 
+assessment. The China HSR connection. The population pressure mapping that identifies the 
+site. The monsoon climate engineering requirements. The specific governance challenges of a 
+new city in the world’s most densely governed continent. 
+City 4: Eastern Europe — Provisionally sited in a high-emigration region with available land. The 
+European HSR network connection and the Central Asian corridor link. The demographic crisis 
+context — Eastern Europe is simultaneously emptying and needing investment. The cultural 
+and political complexity of a new city in a region with deep historical identity. 
+City 5: Central America or Mexico — The migration corridor context — this city exists to close 
+the most politically visible economic differential in the Western Hemisphere. The US-Mexico 
+border dynamic. The HSR connection north and south. The governance challenge of building in 
+a region where existing state capacity varies enormously. 
+ 
+THE MATERIALS CONSTRAINT AND SEABED RESEARCH PROGRAMME 
+4 papers 
+Paper 1: The Critical Minerals Strategy 
+The complete Genesis response to the material bottleneck documented in Paper 8. The 80 
+copper mines, 70 lithium mines, 70 nickel mines, 30 cobalt mines required for 2030 targets — 
+the capital commitment, the timeline, the partner nation framework. The Australia partnership in 
+full — the strategic minerals agreement structure, the price floor mechanism, the processing 
+infrastructure investment, the governance framework. The African mining programme — the 
+Copperbelt activation, the DRC engagement strategy, the governance requirements. The 
+permitting reform advocacy — the specific policy changes Genesis supports in democratic 
+nations to reduce mine development timelines without reducing environmental protection. 
+Paper 2: Rare Earth Processing Infrastructure 
+The 40-year programme to replicate Western rare earth processing capability. The specific 
+facilities required — dysprosium and terbium separation, gallium refining, cobalt processing, 
+germanium extraction. The partner nations — Australia, Canada, Brazil, Namibia, Zambia. The 
+capital investment required at each facility. The technical specifications. The workforce 
+development programme — how the processing expertise accumulated by China over 40 years 
+is transferred to a distributed global network. The timeline for each facility reaching commercial 
+scale. 
+Paper 3: Seabed Research Programme 
+The Genesis investment in deep-sea extraction technology. The specific research priorities — 
+nodule processing chemistry, sediment plume management, ecosystem impact assessment, 
+oxygen production interaction, carbon release quantification. The research partnerships — the 
+oceanographic institutions, the materials science universities, the engineering firms. The pilot 
+programme framework — how Genesis funds controlled extraction tests with rigorous 
+environmental monitoring. The governance advocacy — the international framework for seabed 
+mining that Genesis supports. The honest timeline — what Genesis will and will not commit to 
+based on current evidence. 
+Paper 4: Substitution Technology Investment 
+The Genesis R&D portfolio for demand reduction. The sodium-ion battery programme — the 
+research investment, the deployment pathway, the grid storage target. The direct air capture 
+synthetic fuel programme — the Prometheus Fuels partnership model, the scale-up pathway, 
+the aviation and shipping decarbonisation timeline. The carbon materials programme — 
+concrete aggregate, graphene, carbon fibre from captured CO2. The inductive road research 
+programme. The solid-state battery development investment. The target: by 2040 the demand 
+per unit of critical mineral for every major technology is 50% lower than 2025 levels through 
+substitution chemistry alone. 
+ 
+SYNTHETIC FUELS AND CARBON MATERIALS R&D PROGRAMME 
+2 papers 
+Paper 1: Direct Air Capture and Synthetic Fuel 
+The complete technical and investment framework for scaling direct air capture synthetic fuel 
+from pilot to commercial. The $50 per tonne capture cost breakthrough — what it means, how it 
+was achieved, what the pathway to $20 per tonne looks like. The electrolyser infrastructure 
+required to produce green hydrogen at scale. The Fischer-Tropsch synthesis process for 
+converting CO2 and hydrogen to liquid hydrocarbons. The capital investment required to reach 
+aviation-scale supply. The Genesis offtake guarantee framework that makes the capital 
+investment viable. The political economy — how synthetic fuel preserves existing infrastructure 
+assets while decarbonising transport, the coalition it builds, why it is the most politically 
+achievable transition pathway. 
+Paper 2: Carbon into Permanent Materials 
+The complete research and deployment programme for converting captured carbon into 
+high-value permanent materials. The concrete aggregate pathway — the chemistry, the scale 
+requirements, the cement industry transformation roadmap. The graphene production pathway 
+— the energy requirements, the purification process, the quality standards required for 
+commercial applications. The carbon fibre pathway — aerospace grade, wind turbine grade, 
+automotive grade. The economics of each pathway — the point at which carbon capture 
+becomes a profitable industry because the product value exceeds the capture cost. The 
+Genesis investment portfolio across each pathway and the commercialisation timeline. 
+ 
+SODIUM-ION DEPLOYMENT FRAMEWORK 
+2 papers 
+Paper 1: The Technical Case 
+The complete chemistry and engineering specification of sodium-ion batteries versus 
+lithium-ion. The energy density comparison across every application category — where the gap 
+matters, where it does not. The material inputs — what sodium-ion requires, what it eliminates, 
+the net critical mineral impact across a global deployment scenario. The manufacturing 
+infrastructure — how different it is from lithium-ion production, what the retrofit requirements are, 
+what new build requires. The cycle life, temperature performance, and safety profile. The 
+specific applications where sodium-ion wins outright — grid storage, city EVs, stationary backup 
+power. The applications where lithium-ion retains the advantage — long-range vehicles, 
+portable electronics, aviation. 
+Paper 2: The Deployment Programme 
+The Genesis investment framework for sodium-ion deployment. The grid storage target — what 
+fraction of global grid storage should be sodium-ion by 2035, by 2040. The manufacturing 
+investment required. The partner nations — China already has commercial production, the 
+framework for distributing manufacturing to other regions. The offtake guarantee structure that 
+makes the investment viable. The critical mineral savings calculation — how sodium-ion grid 
+storage deployment frees lithium and cobalt for applications where they are genuinely 
+irreplaceable. The integration with the Genesis electrification programme — sodium-ion as the 
+storage layer for African and South Asian renewable deployments where weight and energy 
+density matter less than cost and materials availability. 
+ 
+THE ORBITAL CONSTRUCTION RESEARCH PROGRAMME 
+3 papers 
+Paper 1: The Engineering Roadmap 
+The complete assessment of current orbital construction capability and the research pathway to 
+a permanent human settlement. The launch cost trajectory — from $54,000 per kg in 2000 to 
+under $2,000 per kg today, the projected trajectory to $500 per kg and what that enables. The 
+robotic construction systems — current capability in microgravity, the specific development 
+required for large-scale structural assembly. The materials challenge — what can be 
+manufactured in orbit from lunar or asteroid resources versus what must be launched from 
+earth. The life support engineering — closed-loop air, water, and food systems at the scale 
+required for permanent habitation. The radiation shielding requirements at different orbital 
+altitudes. The structural engineering of large-scale habitats — rotation for artificial gravity, 
+pressure integrity, thermal management. 
+Paper 2: The Research Investment Portfolio 
+The specific Genesis research commitments. The materials science programme — what new 
+materials enable orbital construction that current materials cannot. The robotic assembly 
+programme — the specific systems required to construct large structures in microgravity without 
+human EVA at every stage. The closed-loop life support programme — the biology, chemistry, 
+and engineering of systems that cycle air, water, and food indefinitely. The in-situ resource 
+utilisation programme — how lunar regolith, asteroid material, and orbital debris can be 
+converted into construction materials. The partner institutions — the universities, the national 
+space agencies, the private companies. The funding timeline — what Genesis commits in each 
+phase. 
+Paper 3: The City in Space — Conceptual Architecture 
+The long-term vision stated as concretely as current engineering knowledge allows. The orbital 
+altitude selection — the radiation environment, the gravity gradient, the debris risk at different 
+altitudes. The habitat design concepts — the cylinder rotation model, the torus model, the 
+modular expansion architecture. The population progression — from research station through 
+pilot habitation through permanent settlement through city scale. The economic model — what 
+the space city produces that justifies the ongoing capital investment. The governance 
+framework — how Apex Democracy applies in a settlement where every resident is a volunteer, 
+where exit is possible but genuinely difficult, where the community is self-selecting in ways no 
+terrestrial city is. The connection to Gaia and the other Genesis cities — the space city as the 
+sixth Genesis city, the furthest horizon, the declaration that this civilisation intends to outlast its 
+planet. 
+ 
+Total companion white paper library: approximately 85 papers across 18 series. 
+That is the full scope of what the ten Genesis Civilisation Papers generate as companion 
+documents. The ten papers are the architecture. These 55 are the engineering, the governance, 
+the economics, and the science. 
+Every one of them is implied by what you’ve already built. None of them needs to be written 
+before Paper 9 and Paper 10 complete the series. But naming them here — as a library — 
+establishes that the Genesis Civilisation Papers are not the complete work. They are the 
+opening argument that the complete work follows from. 
+Ready for Paper 9 when you are.​ 

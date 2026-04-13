@@ -1,0 +1,310 @@
+PAPER 4: THE COST OF THE CURRENT SYSTEM 
+The Genesis Civilisation Papers — Paper 4 of 10 
+Genesis Monetary Systems — Non-Profit 
+Version 1.0 
+ 
+Section 1: Accounting For The Full Cost 
+The current global financial system has produced genuine and measurable achievements. Over 
+the past seventy-five years global GDP has grown from approximately $5 trillion to over $105 
+trillion. Life expectancy has increased in virtually every region on earth. Technological 
+development has accelerated at a pace without historical precedent. The proportion of the 
+global population living in conditions classified as extreme poverty by conventional measures 
+has declined substantially over the past three decades. 
+These achievements are real. They are not disputed here. 
+This paper asks a different and more precise question. What has the current system cost — in 
+instability, in conflict, in suppressed human potential, in structural inequality baked into the 
+architecture itself — that does not appear in the ledger of its achievements? A complete 
+accounting of any system requires both sides of that ledger. The achievements column of the 
+current global financial architecture has been extensively documented. The cost column has not 
+received equivalent examination. 
+What follows is an attempt at that examination. It is conducted without political attribution, 
+without national accusation, and without moral judgement of the actors operating within the 
+system. The argument throughout is structural. Systems produce outcomes that reflect their 
+design. When the outcomes are consistently and documentably harmful to the majority of 
+participants the appropriate response is to examine the design — not to assign blame to those 
+who inherited it, operated it, or benefited from it. 
+The financial layer of civilisation is not neutral. This paper examines what that non-neutrality 
+costs. 
+ 
+Section 2: The Currency That Nobody Chose 
+The majority of international trade conducted between sovereign nations — nations with their 
+own currencies, their own central banks, their own monetary systems representing the 
+economic decisions of their own populations — is settled in a currency that belongs to neither 
+party in the transaction. 
+A manufacturer in one country sells goods to a buyer in another. Both countries have 
+functioning currencies. Both currencies are legal tender within their respective borders, 
+managed by their respective central banks, representing the monetary sovereignty of their 
+respective governments. In the overwhelming majority of cases neither currency is involved in 
+settling the transaction between them. Both parties must acquire, hold, and transact in a third 
+currency — one they did not choose, issued by a government that is not theirs, managed by a 
+central bank whose mandate serves a population neither party belongs to. 
+This arrangement is so embedded in the infrastructure of international commerce that it is rarely 
+examined as a choice. It is treated as a feature of how global trade functions — as natural as 
+the existence of international shipping lanes or cargo containers. It is not natural. It is an 
+architectural choice made at a specific historical moment by specific actors operating at the 
+peak of their relative power. It persists not because it is the most efficient or most equitable 
+mechanism available to the global economy but because the infrastructure constructed around it 
+— correspondent banking networks, commodity pricing conventions, sovereign reserve 
+holdings, international debt issuance standards — creates switching costs that are themselves a 
+structural barrier to change. 
+The consequences of this arrangement are documented and measurable. 
+To participate in international trade, nations must hold reserves in a currency they do not 
+control. Those reserves represent real national wealth — the accumulated product of economic 
+activity and export earnings — held in an instrument whose value is determined entirely by the 
+monetary policy decisions of a foreign government and a foreign central bank. When that 
+foreign central bank raises interest rates to manage its own domestic inflation the 
+consequences — capital outflows, exchange rate pressure, increased debt service costs on 
+dollar-denominated obligations — are transmitted to every nation holding those reserves and 
+every nation whose debt is denominated in that currency. Regardless of those nations’ own 
+economic conditions. Regardless of their own policy choices. Regardless of any democratic 
+mandate their own governments hold. 
+The Bank for International Settlements, in its annual reports, documents the transmission of 
+monetary policy decisions from the world’s dominant reserve currency issuer to the broader 
+global economy. The mechanism is described in technical language as spillover effects and 
+cross-border monetary transmission. In plain language it means that the central bank of one 
+nation effectively sets monetary conditions for a significant portion of the rest of the world — 
+without any mandate from those nations, without accountability to their populations, and without 
+any mechanism for their input into the decisions that affect them. 
+This is not presented here as an accusation. It is a structural description of how the system 
+operates. The actors at the centre of this arrangement did not design it to harm others. They 
+designed it to serve their own interests at a moment when they had the power to do so. The 
+harm to others is structural — an output of the design rather than an intention of the designers. 
+The cost it imposes on the majority of the world’s nations and the majority of the world’s 
+population is real, continuous, and invisible on any official ledger. It is simply the permanent 
+background cost of participating in the global economy on terms that were not designed with the 
+majority’s interests in mind. 
+ 
+Section 3: Financial Architecture As Geopolitical Instrument 
+Access to the global financial system is not guaranteed. It is granted and it can be revoked. 
+SWIFT — the Society for Worldwide Interbank Financial Telecommunication — is the 
+messaging infrastructure through which the vast majority of international financial transactions 
+are coordinated. It connects over 11,000 financial institutions across more than 200 countries. It 
+is incorporated in Belgium and formally governed as a cooperative. Its board includes 
+representatives from financial institutions across multiple jurisdictions. 
+In February 2022 a subset of nations were removed from SWIFT. The removal was coordinated 
+by a group of governments acting in response to a geopolitical event. The practical 
+consequence was that the targeted nations’ financial institutions could no longer communicate 
+through the dominant international payment messaging infrastructure. International trade, 
+cross-border payments, and financial flows denominated in major currencies became 
+substantially more difficult to execute. 
+This paper takes no position on the geopolitical circumstances that produced that decision. The 
+observation relevant to this analysis is structural. A payment infrastructure that can be used as a 
+geopolitical weapon by some actors against others — regardless of the justification in any 
+specific instance — is not a neutral financial layer. It is an instrument of power. An instrument of 
+power in the hands of specific actors will be used in the interests of those actors. That is not a 
+criticism of the actors. It is a description of the instrument. 
+The International Monetary Fund provides emergency financing to sovereign nations facing 
+balance of payments crises. This function is valuable and in many instances has prevented 
+economic collapses that would have caused severe harm to civilian populations. The IMF also 
+attaches conditions to its financing — structural adjustment requirements that have historically 
+reflected the economic orthodoxies of its largest shareholders rather than the developmental 
+priorities of the borrowing nations. The IMF’s voting structure weights decision-making power by 
+financial contribution. Its largest shareholders hold the largest votes. The institution is not 
+neutral. It is governed by the interests of its dominant members, as any institution governed by 
+its funders necessarily is. 
+Credit rating agencies — the private firms whose assessments of sovereign creditworthiness 
+determine the interest rates at which nations can borrow — operate without democratic 
+mandate or international accountability. Their ratings influence the borrowing costs of sovereign 
+governments serving hundreds of millions of people. The agencies’ historical record includes 
+systematic failures in assessing risk in complex financial instruments prior to the 2008 financial 
+crisis. Their assessments of sovereign risk are influenced by factors beyond pure economic 
+fundamentals — including geopolitical relationships, policy orthodoxy relative to dominant 
+institutional preferences, and the degree to which a nation’s economic policy conforms to 
+frameworks endorsed by the major financial centres. 
+The United Kingdom provides an instructive domestic example of how financial architecture 
+shapes outcomes independently of democratic choice. The Bank of England sets interest rates 
+that determine mortgage costs for millions of British homeowners, business borrowing costs 
+across the economy, and the government’s own debt service costs — through a mechanism that 
+is deliberately insulated from democratic accountability. The independence of central banks from 
+elected governments is presented as a technical necessity for effective monetary management. 
+It is simultaneously a structural choice that places one of the most consequential levers of 
+economic life beyond the reach of democratic decision-making. The Bank of England’s 
+decisions on quantitative easing, interest rates, and financial stability directly affected the fiscal 
+position of the UK government — and therefore the public services available to UK citizens — 
+without those citizens having any meaningful democratic input into those decisions. 
+This is not unique to the United Kingdom. It is the standard architecture of monetary governance 
+across the developed world. It is noted here not as criticism of central bank independence as a 
+concept but as an illustration of how financial architecture shapes outcomes in ways that 
+democratic processes cannot easily reach or correct. 
+The pattern across SWIFT access, IMF conditionality, credit rating assessments, and central 
+bank governance is consistent. The actors with the most influence over the financial architecture 
+that shapes outcomes for the majority of the world’s population are the least accountable to that 
+majority. The financial layer is not neutral. It is governed. And the governance reflects the 
+interests of the governors. 
+ 
+Section 4: Wars With Financial Architecture Beneath Them 
+The relationship between financial architecture and armed conflict is among the least examined 
+dimensions of the geopolitical landscape and among the most consequential. 
+This section makes no accusations. It makes a structural observation supported by a pattern in 
+the data that serious academic literature has examined extensively and that warrants inclusion 
+in any complete accounting of the current system’s costs. 
+The geographic distribution of the world’s major armed conflicts over the past half century 
+correlates with the geographic distribution of strategically significant resources — hydrocarbons, 
+minerals, agricultural land, water systems, and the maritime and terrestrial routes through which 
+those resources move from extraction to consumption. This correlation is not perfect. Conflicts 
+have multiple causes — historical grievances, ethnic tensions, political competition, ideological 
+struggle. The financial architecture beneath many of the most persistent and most destructive 
+conflicts is rarely the subject of political discourse about those conflicts. It is nonetheless 
+present. 
+Resource pricing, trade route control, and the currency denomination of commodity transactions 
+create financial interests in the political conditions of resource-producing regions. Those 
+financial interests create structural incentives — not necessarily conscious or coordinated — for 
+interventions, for the support of particular political factions, for the destabilisation of governance 
+structures that threaten existing arrangements, and for the maintenance of political conditions 
+that keep resource flows stable and favourably priced. 
+The countries most frequently subject to external political and military intervention over the past 
+half century share several characteristics. They possess significant quantities of strategically 
+valued resources. Their political independence creates tension with the interests of actors who 
+benefit from access to those resources on favourable terms. Their integration into the global 
+financial system — through dollar-denominated debt, through dependence on IMF financing, 
+through reliance on SWIFT-connected correspondent banking — creates leverage points 
+through which external pressure can be applied without direct military action. 
+None of this requires a conspiracy. It requires only that actors with financial interests in political 
+outcomes use the instruments available to them to pursue those interests — as all actors with 
+interests and instruments do. The financial architecture of the current system provides 
+instruments of extraordinary reach and power. It should not be surprising that those instruments 
+are used. 
+The cost of this dimension of the current system falls overwhelmingly on the populations of the 
+countries in which the consequences are most directly felt. The financial beneficiaries of 
+resource access and commodity pricing arrangements are not the populations living above 
+those resources. The structural design of the current system ensures that the benefits and the 
+costs of resource-related conflict are distributed in precisely opposite directions. 
+A financial architecture that creates structural incentives for resource control necessarily creates 
+structural incentives for the conflicts that resource control produces. Redesigning the 
+architecture does not eliminate all causes of conflict. It eliminates one of the most persistent and 
+least acknowledged structural contributors to it. 
+ 
+Section 5: The Inequality The Architecture Produces 
+The inequality documented in Papers 2 and 3 — the differential borrowing costs, the hidden 
+obligations, the compounding debt trap — is one dimension of the structural inequality 
+embedded in the current financial architecture. It is not the only one. 
+The reserve currency premium allows the issuing nation to run structural fiscal deficits that 
+would be unsustainable for any other sovereign. The permanent artificial demand for reserve 
+currency assets — created by the requirement that other nations hold those assets to 
+participate in international trade — effectively subsidises the fiscal position of the issuing 
+government at the expense of the nations whose reserve holdings create that demand. This is a 
+transfer of real economic value from the majority of the world’s nations to the issuing nation that 
+occurs continuously, automatically, and without any formal acknowledgment or compensation. 
+The intellectual property frameworks embedded in international trade agreements concentrate 
+the returns from innovation in a small number of jurisdictions — primarily those that were most 
+economically developed at the moment those frameworks were negotiated. Nations that are 
+now developing their technological and industrial capacity operate within an intellectual property 
+architecture that was designed before they had meaningful input into its terms and that 
+systematically routes the returns from knowledge creation toward the jurisdictions that already 
+possess it. 
+The capital mobility architecture of the current system allows financial capital to cross borders 
+freely in pursuit of the highest available return while labour — the human capital of workers — 
+cannot. The consequence is that capital can access low-cost labour markets anywhere on earth 
+while workers cannot access high-wage labour markets with equivalent freedom. This 
+asymmetry systematically advantages capital holders over labour providers — a structural 
+feature of the architecture rather than an outcome of individual market decisions. 
+Tax architecture — both the international frameworks governing corporate taxation and the 
+bilateral treaty networks through which capital flows are structured — creates legal mechanisms 
+for the separation of economic activity from tax obligation. Corporations generating revenues 
+from customers in one jurisdiction, using infrastructure funded by the taxes of that jurisdiction’s 
+citizens, can structure their affairs to record profits in jurisdictions with minimal tax obligations. 
+This is legal. It is the designed output of a tax architecture negotiated primarily by the 
+governments of the jurisdictions that benefit from it. Its cost is borne by the public finances of 
+the jurisdictions whose tax base is eroded by it — disproportionately the developing economies 
+with the least leverage in the negotiations that produced the framework. 
+The pattern across reserve currency premium, intellectual property frameworks, capital mobility 
+asymmetry, and tax architecture is the same pattern identified in Sections 2 and 3. The actors 
+with the most influence over the design of these frameworks are the actors who benefit most 
+from the resulting design. The costs fall systematically on the actors with the least influence over 
+the design. This is not accidental. It is the predictable output of a design process in which power 
+and interest determine the outcome. 
+ 
+Section 6: The Human Cost 
+The mechanisms described in Sections 2 through 5 are not abstract. They have human 
+expressions that are documented, measurable, and directly traceable to the architectural 
+choices examined in this paper. 
+Almost half the people on earth live in countries where government interest payments now 
+exceed spending on either health or education. The resources exist within those government 
+budgets. They are allocated to debt service rather than to the citizens whose labour generated 
+them — not by political choice in the conventional sense but because the architecture of 
+accumulated debt and differential borrowing costs produces that allocation mechanically. 
+Approximately 2.2 billion people lack access to safe drinking water. Approximately 800 million 
+people experience food insecurity. Approximately 1 billion people lack access to electricity. 
+These are not conditions produced by the absence of global productive capacity. The world 
+produces sufficient food to feed its entire population. The engineering knowledge to provide 
+clean water and reliable electricity to every person on earth exists. The material resources 
+required to do so exist. What does not exist — within the current financial architecture — is the 
+routing of capital toward these outcomes at the scale and speed required to address them. 
+Capital flows toward the highest financial return. The highest financial return in the current 
+architecture is not produced by providing clean water to rural communities in sub-Saharan 
+Africa or reliable electricity to populations in South Asia. It is produced by financial instruments, 
+real estate in capital cities, technology platforms serving already-wealthy consumer markets, 
+and resource extraction in jurisdictions with weak regulatory capacity. The architecture routes 
+capital away from the highest human return and toward the highest financial return. The human 
+cost of that routing is the gap between the world as it is and the world that current productive 
+capacity could produce. 
+The United Kingdom provides a specific and proximate example of how financial architecture 
+produces human costs at the domestic level. The UK government in 2025 spent approximately 
+£129 billion servicing its debt obligations. In the same year the National Health Service reported 
+waiting lists of over 7 million people. Infrastructure investment has been systematically deferred 
+across multiple spending review cycles. The £129 billion interest payment did not purchase a 
+single hospital bed, a single infrastructure project, or a single improvement in the public services 
+that the taxes generating it were levied to provide. It was the cost of maintaining the current 
+position — transferred to financial creditors rather than deployed in the economy that generated 
+it. 
+This is not a critique of any political decision. It is a description of what debt architecture 
+produces when it reaches the scale documented in Papers 2 and 3. The human cost is not a 
+side effect. It is a structural output. 
+ 
+Section 7: The Financial Layer Should Be Neutral 
+The evidence assembled in this paper supports a conclusion that does not require advocacy to 
+reach. It follows from the structural observations alone. 
+A financial architecture in which the currency of settlement for the majority of international trade 
+is chosen by the most powerful actor rather than by the parties to the transaction is not neutral. 
+A payment infrastructure that can be used as a geopolitical instrument by some actors against 
+others is not neutral. A credit assessment system governed by private entities accountable to no 
+democratic mandate is not neutral. A capital mobility framework that advantages capital over 
+labour is not neutral. A tax architecture that routes returns from economic activity away from the 
+jurisdictions generating it is not neutral. 
+The current global financial architecture is a power structure. It produces outcomes that reflect 
+the interests of the actors who designed it and who have maintained it. Those outcomes include 
+the differential borrowing costs of Paper 2, the hidden obligations of Paper 3, and the 
+geopolitical instability, resource conflicts, and suppressed human potential documented in this 
+paper. 
+This is not an argument that the actors who benefit from the current architecture are malicious. It 
+is not an argument that the current system has produced no benefits — Section 1 
+acknowledged those benefits explicitly. It is the structural observation that a financial layer 
+serving 8 billion people across 195 sovereign nations cannot justifiably be designed to serve the 
+interests of any subset of them. 
+The financial layer of civilisation should respond to economic reality only. The productive 
+capacity of an economy. The assets it holds. The obligations it carries. The trade flows it 
+generates. It should not respond to historical power relationships. It should not respond to 
+geopolitical alignment. It should not be weaponisable by any actor against any other. It should 
+not create structural incentives for resource conflicts. It should not systematically route capital 
+away from the highest human return. 
+This is not a utopian proposition. It is the logical extension of the principles that most nations 
+nominally endorse within their own domestic financial systems — that markets should be fair, 
+transparent, and accessible to all participants on equal terms — applied consistently at the 
+global level. 
+The gap between that principle and the current reality is what this paper has documented. 
+ 
+Section 8: The Transition 
+This paper has examined what the current system costs beyond what appears in its official 
+ledger. Papers 2 and 3 documented the debt — visible and hidden. This paper has documented 
+the broader costs of the architecture that produced and perpetuates that debt — the currency 
+arrangement that most of the world did not choose, the financial instruments used as 
+geopolitical tools, the structural incentives beneath resource conflicts, the inequality embedded 
+in the system’s design, and the human outcomes those features produce. 
+Together Papers 2, 3, and 4 establish the complete diagnostic case. The current architecture is 
+not merely in financial difficulty. It is structurally designed in ways that produce outcomes 
+harmful to the majority of its participants — and structurally resistant to reform from within 
+because the actors with the power to reform it are the actors whose interests the current design 
+serves. 
+Paper 5 — Genesis Capitalism — does not extend the diagnosis. It pivots entirely. It makes the 
+economic case — in the language of markets, capital allocation, and rational financial 
+self-interest — for why a different architecture produces better outcomes for every actor in the 
+current system. Including those currently at the top of it. 
+The case for change is not only moral. It is financial. Paper 5 makes that argument. 
+ 
+Genesis Monetary Systems 
+Non-Profit — Est. 2026 
+genesismonetarysystems.org 
+This paper is the fourth in a series of ten. It may be freely shared, translated, reproduced, and 
+critiqued without restriction. No rights are reserved. The ideas belong to everyone. 
+ 
+ 

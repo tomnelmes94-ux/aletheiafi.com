@@ -1,0 +1,1682 @@
+ALETHEIA 
+Aletheia Fusion Intelligence — AFI 
+DETECTOR PACK EXPANSION 
+Complete Pack Library & Long-Horizon Expansion Map 
+ 
+March 2026  |  CONFIDENTIAL  |  INTERNAL STRATEGY DOCUMENT 
+ 
+The Core Thesis 
+Everything is signals. Every digital system — biological sensor networks, financial rails, enterprise 
+identity layers, manufacturing floors, power grids, robotic actuators, AI agents — produces behavioral 
+signals as a byproduct of existing. The question is who learns to read them intelligently. 
+ 
+AFI's fusion engine doesn't detect cyber attacks specifically. It detects behavioral anomalies in signal 
+streams. The connector library determines which signals enter the engine. The detector packs 
+determine which behavioral geometries the engine recognises. The fusion math underneath is domain-
+agnostic by architecture — not by analogy. 
+ 
+The fusion engine does not care what signals it fuses. It cares about behavioral geometry — 
+the shape of how things move, the timing, sequence, and structural signature of normal 
+versus anomalous. This is not a metaphor. It is literally how the codebase is architected. 
+ 
+Master Pack Library — Complete Overview 
+Current confirmed packs, build sequence, and long-horizon expansion targets. Total detector count 
+target: 100+ across all packs. 
+ 
+Pack 
+Ship 
+Phase 
+Detectors 
+Priority 
+Regulatory Angle 
+MSP Operations Pack 
+NOW — 
+Ships 
+First 
+6 
+Critical 
+MSP operational security; cross-
+tenant credential isolation 
+Healthcare Pack (HIPAA) 
+Phase 1 
+8 
+High 
+HIPAA §164.312, PHI access 
+audit, breach notification 
+Pack 
+Ship 
+Phase 
+Detectors 
+Priority 
+Regulatory Angle 
+Financial Pack 
+Phase 1 
+8 
+High 
+SOX, PCI-DSS, GLBA, wire 
+fraud indicators 
+Cloud Security Pack 
+Phase 1–
+2 
+10 
+High 
+CSA CCM, AWS/Azure security 
+frameworks, CSPM gap-fill 
+Identity Risk Pack 
+Phase 1–
+2 
+6 
+High 
+Zero Trust, NIST 800-207, 
+privilege management audits 
+Legal Pack 
+Phase 2 
+6 
+Medium 
+Matter confidentiality, ABA 
+duties, data handling compliance 
+Email & Collaboration Pack 
+Phase 2 
+(post-13) 
+8 
+Medium 
+Email DLP, M365 security, 
+OAuth governance 
+Endpoint Pack 
+Phase 2 
+(post-13) 
+7 
+Medium 
+EDR augmentation, MITRE 
+ATT&CK coverage mapping 
+Compliance Pack 
+Phase 2 
+6 
+Medium 
+SOC 2, ISO 27001, CMMC, 
+audit chain integrity 
+OT / Industrial Pack 
+Phase 3 
+8 
+Medium 
+NERC CIP, IEC 62443, CISA 
+ICS advisories 
+Insurance Underwriting 
+Pack 
+Phase 3 
+7 
+Medium 
+Cyber insurance carrier 
+requirements, risk scoring 
+Static Systems / Physical 
+Security Pack 
+Phase 3 
+6 
+Medium 
+Physical-digital convergence, 
+door/badge/camera anomaly 
+Supply Chain Pack 
+Phase 3–
+4 
+7 
+Medium 
+NIST SP 800-161, vendor risk 
+management, SBOM integrity 
+Telecommunications Pack 
+Phase 4 
+7 
+Medium 
+FCC robocall rules, 
+STIR/SHAKEN, fraud detection 
+AI Agent Security Pack 
+Phase 4 
+8 
+High 
+Emerging AI governance 
+frameworks, agentic oversight 
+Robotics & Autonomous 
+Systems Pack 
+Phase 4–
+5 
+7 
+Strategic 
+Emerging OT/robotics 
+standards, autonomous system 
+integrity 
+Defense & Intelligence 
+Pack 
+Phase 5 
+8 
+Strategic 
+CMMC Level 3, NIST 800-171, 
+DoD supply chain requirements 
+ 
+MSP Operations Pack 
+Ships first — protects the MSP's own business before protecting their clients 
+SHIP NOW 
+ 
+Every other pack serves the MSP's clients. The MSP Operations Pack serves the MSP 
+directly. The first conversation isn't 'this will help your clients.' It's 'this will protect your own 
+business.' Faster yes. Stronger trust signal. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Cross-Tenant Credential Usage 
+Identity / Auth 
+1.3 
+0.65 
+Admin credential 
+active across 
+multiple client 
+tenants 
+simultaneously 
+Admin Login Across Multiple Clients 
+Identity / Auth 
+1.2 
+0.60 
+Same identity 
+authenticating to 
+>3 client 
+environments 
+within short 
+window 
+Shared Credential Patterns 
+Identity / Auth 
+1.2 
+none 
+Credential entropy 
+patterns 
+suggesting shared 
+or reused MSP 
+admin keys 
+Unusual RMM Command 
+Propagation 
+Endpoint / RMM 
+1.3 
+0.70 
+RMM-issued 
+commands 
+spreading across 
+client 
+environments 
+atypically 
+MSP Tool Privilege Escalation 
+Privilege 
+1.2 
+0.60 
+MSP management 
+tooling accessing 
+scopes beyond 
+operational 
+baseline 
+After-Hours Multi-Client Access 
+Behavioral 
+1.0 
+none 
+MSP operator 
+accessing multiple 
+client 
+environments 
+outside business 
+hours 
+ 
+Why This Matters to Every MSP 
+MSPs are the single highest-value target in the supply chain. One compromised MSP credential 
+reaches every client environment they manage. The 2021 Kaseya VSA attack pushed ransomware to 
+over 1,500 downstream businesses through a single MSP toolchain. This pack makes AFI the first 
+security product that protects the MSP's own operational infrastructure, not just their clients. The 
+opening pitch writes itself. 
+ 
+Healthcare Pack (HIPAA) 
+PHI access anomalies, breach precursors, and audit-ready detection for 
+regulated clinical environments 
+Phase 1 — High 
+Priority 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+PHI Bulk Export Anomaly 
+Data Exfiltration 
+1.3 
+0.65 
+Volume of patient 
+record exports 
+exceeds clinical 
+baseline significantly 
+After-Hours Patient Record Access 
+Access Anomaly 
+1.1 
+none 
+EHR access outside 
+operator's normal 
+hours — correlated 
+with identity 
+Unusual EHR Query Patterns 
+Behavioral 
+1.1 
+none 
+Query scope, record 
+type, or depth 
+deviating from 
+clinician baseline 
+Mass Patient Lookup Behavior 
+Fan-Out 
+1.2 
+0.60 
+Single identity 
+accessing broad 
+patient list without 
+clinical justification 
+pattern 
+Doctor Account Lateral Movement 
+Lateral Movement 
+1.2 
+0.65 
+Clinical identity 
+accessing systems 
+outside their 
+specialty/department 
+Medical Device Access Anomaly 
+OT / Device 
+1.1 
+none 
+Unusual 
+authentication or 
+command patterns 
+to networked 
+medical devices 
+Insurance / Billing Data Access 
+Data Access 
+1.0 
+none 
+Clinical identity 
+accessing financial 
+or billing records 
+atypically 
+Record Amendment Burst 
+Integrity 
+1.1 
+0.60 
+High-volume record 
+modification events 
+in compressed 
+timeframe 
+ 
+HIPAA §164.312(b) requires audit controls — 'implement hardware, software, and/or 
+procedural mechanisms that record and examine activity in information systems.' AFI 
+Sentinel Evidence Reports fulfill this requirement directly and become exhibit-ready for 
+breach investigation or OCR audit. 
+ 
+Financial Pack 
+Wire fraud precursors, trading anomalies, and privilege drift in environments 
+where a single incident has material P&L consequences 
+Phase 1 — High 
+Priority 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Wire Transfer Precursor Pattern 
+Fraud / Exfil 
+1.4 
+0.70 
+Behavioral sequence 
+preceding wire 
+transfer: lookup → 
+modify → initiate 
+After-Hours Transaction Access 
+Access Anomaly 
+1.2 
+0.60 
+Financial system 
+access outside 
+business hours 
+correlated with 
+identity 
+Trading System Privilege 
+Escalation 
+Privilege 
+1.3 
+0.65 
+Privilege gradient 
+into execution or 
+settlement systems 
+above baseline 
+Rapid Account Privilege Drift 
+Privilege 
+1.2 
+none 
+Accumulated 
+permissions across 
+financial systems 
+exceeding role 
+baseline 
+Payment Rail Access Anomaly 
+Access Anomaly 
+1.3 
+0.70 
+ACH/SWIFT/FedWire 
+system access from 
+identity without 
+payment history 
+Bulk Beneficiary Record 
+Modification 
+Integrity 
+1.3 
+0.65 
+High-volume 
+changes to payment 
+destination records in 
+compressed window 
+Cross-System Financial Data 
+Aggregation 
+Exfiltration 
+1.2 
+0.60 
+Single identity 
+querying multiple 
+financial databases 
+unusually in 
+sequence 
+Trading Halt / Override Attempt 
+Policy 
+1.4 
+0.75 
+Attempt to access 
+override or 
+emergency functions 
+in trading platforms 
+ 
+Financial environments carry the highest cost-per-incident of any sector. A single undetected wire fraud 
+event can exceed the entire annual cost of AFI deployment. Framing: AFI isn't a security cost in 
+financial environments — it's a loss prevention investment with a calculable ROI. 
+Cloud Security Pack 
+IAM drift, cross-region anomalies, storage exfiltration, and misconfiguration-
+adjacent behavioral signals 
+Phase 1–2 — 
+High Priority 
+ 
+Cloud environments generate enormous volumes of API and IAM signals. Microsoft Sentinel 
+covers this space with per-workspace billing that punishes MSPs at scale. AFI's structural 
+behavioral approach costs the same regardless of event volume — and the fusion engine 
+catches coordinated cloud attacks that per-rule SIEM approaches miss entirely. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Unusual Cloud Resource 
+Provisioning 
+Infrastructure 
+1.2 
+none 
+Compute/storage 
+resources 
+provisioned 
+outside approved 
+regions or types 
+Cross-Region Access Anomaly 
+Access Anomaly 
+1.2 
+0.60 
+API calls 
+originating from or 
+targeting regions 
+outside operational 
+baseline 
+Storage Exfiltration Pattern 
+Data Exfiltration 
+1.3 
+0.65 
+Bulk object 
+enumeration + 
+download 
+sequence in 
+blob/S3/GCS 
+stores 
+IAM Privilege Drift 
+Privilege 
+1.3 
+0.65 
+Accumulated IAM 
+permissions 
+exceeding role 
+baseline across 
+cloud services 
+API Key Misuse 
+Identity / Auth 
+1.2 
+0.60 
+API key activity 
+pattern deviating 
+from service's 
+normal call profile 
+Service Account Lateral Movement 
+Lateral Movement 
+1.3 
+0.65 
+Service account 
+accessing cloud 
+services outside its 
+functional scope 
+Cloud Console Access Anomaly 
+Access Anomaly 
+1.1 
+none 
+Management 
+console access 
+from unusual 
+identity, IP, or time 
+pattern 
+Secrets Manager Access Burst 
+Exfiltration 
+1.3 
+0.70 
+High-volume 
+secrets retrieval — 
+precursor to 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+credential 
+harvesting 
+Network Policy Override Attempt 
+Policy 
+1.3 
+0.70 
+Attempt to modify 
+security groups, 
+VPC rules, or 
+firewall policies 
+Data Pipeline Redirection 
+Exfiltration 
+1.2 
+0.60 
+ETL/data pipeline 
+destination change 
+— data exfil via 
+trusted pipeline 
+ 
+Identity Risk Pack 
+Deep identity behavioral analysis beyond the core Tier 1 detectors — for 
+environments where identity is the primary attack surface 
+Phase 1–2 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Rapid Identity Attribute Changes 
+Identity 
+1.2 
+none 
+MFA methods, 
+email, phone, 
+recovery options 
+changed in 
+compressed 
+window 
+Cross-Identity Synchronization 
+Coordinated Attack 
+1.3 
+0.65 
+Multiple identities 
+exhibiting 
+correlated 
+behavioral 
+changes 
+simultaneously 
+Privilege Accumulation Pattern 
+Privilege 
+1.2 
+0.60 
+Slow accumulation 
+of permissions 
+across systems 
+over extended 
+window 
+Dormant Identity Reactivation 
+Behavioral 
+1.1 
+0.60 
+Identity inactive 
+>60 days suddenly 
+accessing 
+sensitive resources 
+Identity Impersonation Signal 
+Identity 
+1.3 
+0.70 
+Behavioral profile 
+mismatch 
+suggesting 
+credential theft or 
+delegation abuse 
+Service Account Humanization 
+Behavioral 
+1.2 
+0.60 
+Service account 
+exhibiting human-
+like behavioral 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+timing — possible 
+takeover 
+ 
+Legal Pack 
+Matter confidentiality, pre-departure document hoarding, and cross-client 
+data exposure in legal environments 
+Phase 2 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Matter Confidentiality Breach 
+Data Access 
+1.3 
+0.65 
+Attorney accessing 
+matters outside 
+their assigned 
+client portfolio 
+Pre-Departure Document Hoarding 
+Exfiltration 
+1.4 
+0.70 
+Bulk document 
+download/export 
+correlated with 
+calendar/HR 
+signals 
+Unusual Case File Access 
+Access Anomaly 
+1.2 
+none 
+Access to sealed, 
+archived, or 
+opposing party-
+adjacent matter 
+files 
+Cross-Client Data Exposure 
+Data Access 
+1.3 
+0.65 
+Data flows 
+between logically 
+separated client 
+matter 
+environments 
+Privileged Document Download 
+Burst 
+Exfiltration 
+1.2 
+0.60 
+High volume 
+download of 
+attorney-client 
+privileged 
+documents 
+After-Hours Matter Access 
+Access Anomaly 
+1.0 
+none 
+Matter access 
+pattern anomaly 
+outside attorney's 
+historical hours 
+Email & Collaboration Pack 
+OAuth anomalies, bulk forwarding rules, and external exfiltration patterns 
+across M365 and Google Workspace 
+Phase 2 (post-
+Phase 13) 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Bulk Email Forwarding Rule 
+Creation 
+Exfiltration 
+1.3 
+0.65 
+Auto-forward rules 
+targeting external 
+domains created 
+post-compromise 
+Unusual External Sharing Pattern 
+Data Exfiltration 
+1.2 
+0.60 
+SharePoint/Drive 
+share events to 
+external domains 
+above baseline 
+OAuth App Grant Anomaly 
+Identity / Auth 
+1.3 
+0.65 
+High-privilege 
+OAuth app granted 
+by non-admin in 
+compressed 
+window 
+External Domain Exfiltration Pattern 
+Data Exfiltration 
+1.3 
+0.65 
+Email or file 
+transfer volume to 
+specific external 
+domain deviating 
+from baseline 
+Inbox Rule Modification Burst 
+Persistence 
+1.2 
+0.60 
+Multiple inbox rule 
+changes in short 
+window — BEC 
+persistence 
+indicator 
+Calendar Invite to External Unknown 
+Reconnaissance 
+1.0 
+none 
+Mass calendar 
+invites to unknown 
+external recipients 
+— social 
+engineering signal 
+Teams/Slack Data Export Anomaly 
+Exfiltration 
+1.2 
+0.60 
+Collaboration 
+platform export 
+activity outside 
+approved 
+workflows 
+Email Delegation Grant to External 
+Identity 
+1.3 
+0.70 
+Mailbox delegation 
+granted to external 
+or unknown 
+identity 
+ 
+Endpoint Pack 
+EDR signal fusion — AFI sits above endpoint tools and fuses their signals 
+with network, identity, and cloud context 
+Phase 2 (post-
+Phase 13) 
+ 
+AFI doesn't replace EDR. It fuses EDR signals with everything else. A process injection alert 
+from CrowdStrike becomes a confirmed incident when the fusion engine correlates it with an 
+unusual network connection, a first-seen external IP, and an identity that authenticated 6 
+minutes ago from a new device. That correlation is the incident. The EDR alert alone is 
+noise. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Process Injection Pattern 
+Endpoint 
+1.3 
+0.65 
+Memory injection 
+techniques 
+detected by EDR 
+— fused with 
+network context 
+Persistence Mechanism Detection 
+Persistence 
+1.3 
+0.65 
+Registry, 
+scheduled task, or 
+service creation 
+outside baseline 
+Lateral Tool Transfer 
+Lateral Movement 
+1.2 
+0.60 
+Tool or script 
+moved across 
+systems — fused 
+with identity activity 
+EDR Alert Burst Correlation 
+Meta-Signal 
+1.2 
+0.60 
+Multiple EDR alerts 
+across 
+identities/systems 
+in correlated 
+timeframe 
+Living-off-the-Land Behavioral 
+Pattern 
+Evasion 
+1.3 
+0.65 
+Legitimate tools 
+(PSExec, WMI, 
+certutil) used in 
+atypical sequences 
+Unusual Child Process Sequence 
+Endpoint 
+1.1 
+none 
+Parent-child 
+process 
+relationship 
+deviating from 
+software baseline 
+Credential Dumping Precursor 
+Credential Theft 
+1.4 
+0.70 
+LSASS access, 
+SAM dump, or 
+similar memory 
+access pattern 
+ 
+Compliance Pack 
+Audit log integrity, policy violation clustering, and documentation signals for 
+SOC 2 / ISO 27001 / CMMC environments 
+Phase 2 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Policy Violation Clustering 
+Compliance 
+1.2 
+0.60 
+Multiple policy 
+events from same 
+identity or system 
+in compressed 
+window 
+Audit Log Tampering Signal 
+Integrity 
+1.4 
+0.75 
+Log deletion, 
+modification, or 
+gap — integrity 
+breach of evidence 
+chain 
+Data Retention Boundary Violation 
+Data Governance 
+1.2 
+0.60 
+Data accessed or 
+modified beyond 
+its defined 
+retention policy 
+scope 
+Regulatory Access Anomaly 
+Access Anomaly 
+1.2 
+0.60 
+Access to 
+regulated data 
+classes by 
+identities without 
+documented 
+authorization 
+Configuration Change Outside 
+Window 
+Change Mgmt 
+1.1 
+none 
+System 
+configuration 
+changed outside 
+approved change 
+management 
+window 
+Segregation of Duties Violation 
+Governance 
+1.3 
+0.65 
+Single identity 
+performing actions 
+that require dual 
+authorization 
+OT / Industrial Pack 
+SCADA, ICS, and critical infrastructure behavioral signals — where a false 
+negative is not an alert, it's a consequence 
+Phase 3 
+ 
+OT environments have one defining characteristic that makes AFI's architecture uniquely 
+appropriate: the baseline for 'normal' is extremely stable. A pump that runs at 60Hz, a valve 
+that opens on a 4-hour cycle, a temperature sensor that varies within a 2-degree band — 
+these are among the most consistent behavioral baselines in any sector. Deviation from 
+them is meaningful by definition. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+SCADA Access Anomaly 
+Access / Control 
+1.4 
+0.70 
+Unusual identity or 
+timing accessing 
+SCADA 
+supervisory layer 
+OT/IT Boundary Crossing 
+Lateral Movement 
+1.4 
+0.75 
+IT-side identity or 
+process initiating 
+connections into 
+OT network 
+segment 
+Industrial Control Access Anomaly 
+Access / Control 
+1.3 
+0.65 
+PLC or DCS 
+access outside 
+maintenance 
+windows or 
+authorized 
+operator list 
+Setpoint Modification Pattern 
+Integrity 
+1.4 
+0.75 
+Process setpoint 
+changes deviating 
+from engineering 
+baseline — 
+Stuxnet class 
+HMI Access from Network Anomaly 
+Access Anomaly 
+1.3 
+0.65 
+HMI accessed 
+from system or IP 
+not in approved 
+operator list 
+Engineering Workstation Anomaly 
+Endpoint / OT 
+1.3 
+0.65 
+Unusual file 
+access or network 
+traffic on OT 
+engineering 
+workstations 
+Firmware / Logic Download Attempt 
+Integrity 
+1.4 
+0.75 
+Attempt to write 
+firmware or logic to 
+PLC outside 
+maintenance 
+window 
+Process Telemetry Suppression 
+Evasion 
+1.3 
+0.70 
+Reduction or 
+interruption in 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+expected OT 
+telemetry stream 
+— visibility attack 
+ 
+Insurance Underwriting Pack 
+Risk posture signals for cyber insurance carriers — AFI as the evidence 
+substrate for policy issuance, renewal, and breach investigation 
+Phase 3 
+ 
+This pack operates on two levels simultaneously. First: detecting anomalies that indicate elevated 
+insurance risk in a covered environment. Second: generating the audit evidence that carriers require for 
+underwriting decisions. AFI doesn't just protect insured environments — it becomes part of the policy 
+issuance workflow. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+MFA Coverage Gap Detection 
+Access Control 
+1.2 
+none 
+Identities 
+authenticating 
+without MFA to 
+sensitive systems 
+— underwriting risk 
+signal 
+Privileged Account Hygiene 
+Anomaly 
+Privilege 
+1.2 
+none 
+Stale admin 
+accounts, 
+excessive standing 
+privilege — policy 
+risk indicators 
+Backup Access Anomaly 
+Integrity 
+1.2 
+0.60 
+Unusual access to 
+backup systems — 
+ransomware 
+precursor and 
+insurance red flag 
+Recovery System Integrity Signal 
+Integrity 
+1.2 
+0.60 
+Backup deletion, 
+modification, or 
+disconnection from 
+production 
+systems 
+Data Classification Access 
+Mismatch 
+Data Access 
+1.1 
+none 
+Sensitive data 
+class accessed by 
+identity without 
+documented 
+authorization 
+Repeat Incident Pattern 
+Behavioral 
+1.2 
+0.60 
+Same behavioral 
+signature recurring 
+— indicates 
+unresolved 
+systemic 
+weakness 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Incident Response Delay Signal 
+Governance 
+1.0 
+none 
+Alert fired but no 
+analyst action 
+within policy-
+defined response 
+window 
+ 
+Positioning for insurance carriers: AFI is the first product that can serve as both a prevention 
+tool and an audit evidence substrate simultaneously. An insurer that requires AFI 
+deployment as a policy condition has materially reduced their exposure and gained a real-
+time risk signal on every covered environment. 
+Static Systems / Physical Security Pack 
+The 'is your door open' baseline — physical-digital convergence signals, 
+badge anomalies, and camera pattern analysis without semantic content 
+Phase 3 
+ 
+You identified this correctly: the static systems category is deceptively simple and deceptively powerful. 
+A door access control system has a behavioral baseline. The same employee enters through the same 
+entrance between 8:47am and 9:12am every weekday. When they enter at 2:34am on a Sunday, the 
+door doesn't know it's wrong. AFI does. The detection is behavioral, not semantic — no video content is 
+ever parsed. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+After-Hours Physical Access 
+Anomaly 
+Physical / Behavioral 
+1.1 
+none 
+Badge access to 
+facility or sensitive 
+area outside 
+employee's 
+historical pattern 
+Tailgating Pattern Signal 
+Physical / Behavioral 
+1.2 
+0.60 
+Multiple badge 
+reads in rapid 
+succession — 
+tailgating 
+behavioral 
+signature 
+Restricted Area Access Sequence 
+Access Control 
+1.2 
+0.60 
+Access to 
+restricted zones by 
+identity without 
+documented 
+authorization 
+Physical + Digital Access 
+Correlation 
+Meta-Signal 
+1.3 
+0.65 
+Physical badge 
+access correlated 
+with simultaneous 
+unusual digital 
+activity 
+Camera Zone Entry / Exit Anomaly 
+Behavioral 
+1.0 
+none 
+Motion pattern in 
+monitored zone 
+deviating from 
+baseline 
+occupancy profile 
+Access Credential Sharing Signal 
+Identity 
+1.2 
+0.60 
+Same physical 
+credential used in 
+physically 
+impossible 
+sequence (2 
+buildings, 3 min) 
+ 
+Critical architecture note: this pack uses structural behavioral signals only — timing, 
+sequence, identity correlation. No video content is ever parsed or stored. AFI never becomes 
+a surveillance tool. It becomes a behavioral anomaly detector that happens to consume 
+physical access signals. The distinction is the product. 
+ 
+Supply Chain Pack 
+Vendor access anomalies, third-party credential abuse, and data flow 
+integrity signals across extended enterprise boundaries 
+Phase 3–4 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Third-Party Access Pattern Anomaly 
+Access / Vendor 
+1.2 
+0.60 
+Vendor or 
+contractor 
+accessing systems 
+outside contracted 
+scope or hours 
+Vendor Credential Sharing Signal 
+Identity 
+1.2 
+0.60 
+Third-party 
+credentials 
+exhibiting 
+behavioral 
+signatures of 
+shared use 
+Software Component Integrity 
+Signal 
+SBOM / Integrity 
+1.3 
+0.65 
+Software update or 
+dependency 
+change outside 
+approved SBOM 
+baseline 
+API Consumer Behavior Anomaly 
+API / Integration 
+1.1 
+none 
+Third-party API 
+integration 
+deviating from its 
+documented call 
+pattern 
+Data Flow Boundary Violation 
+Exfiltration 
+1.3 
+0.65 
+Data crossing 
+supply chain 
+boundary outside 
+approved 
+integration flows 
+Vendor Privilege Escalation 
+Privilege 
+1.3 
+0.65 
+Third-party identity 
+acquiring 
+permissions 
+beyond contracted 
+role baseline 
+Update Pipeline Integrity Signal 
+Integrity 
+1.3 
+0.70 
+Software update 
+delivery 
+mechanism 
+exhibiting signs of 
+tampering or 
+redirection 
+Telecommunications Pack 
+Coordinated call fraud, robocall patterns, and network anomalies — the 
+Verizon use case, applied to any carrier environment 
+Phase 4 
+ 
+Telecom fraud has behavioral signatures. A robocall campaign doesn't use random calling patterns — it 
+has rate characteristics, targeting sequences, and geographic spread signatures. A compromised PBX 
+routes calls through predictable relay sequences. These are exactly the behavioral geometries AFI's 
+fusion engine was built to detect. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Coordinated Call Pattern Detection 
+Fraud / Behavioral 
+1.3 
+0.65 
+Multiple origination 
+points exhibiting 
+correlated call 
+timing and 
+targeting 
+Robocall Rate Anomaly 
+Volume / Behavioral 
+1.3 
+0.65 
+Call initiation rate 
+exceeding human-
+possible baseline 
+from single origin 
+PBX / SIP Trunk Anomaly 
+Infrastructure 
+1.2 
+0.60 
+Unusual routing, 
+toll fraud 
+indicators, or 
+unauthorized trunk 
+usage 
+International Call Pattern Deviation 
+Fraud 
+1.2 
+0.60 
+International call 
+destination pattern 
+deviating from 
+subscriber 
+baseline 
+STIR/SHAKEN Attestation Anomaly 
+Identity 
+1.1 
+none 
+Call attestation 
+level inconsistent 
+with origination 
+profile 
+Subscriber Behavior Anomaly 
+Behavioral 
+1.1 
+none 
+Individual 
+subscriber call 
+pattern deviation 
+from historical 
+baseline 
+Network Infrastructure Access 
+Anomaly 
+Access / Infra 
+1.3 
+0.65 
+Unusual access to 
+core network 
+management 
+systems or call 
+routing 
+ 
+AI Agent Security Pack 
+Phase 4 — High 
+Priority 
+The fastest-growing attack surface in the world — agents acting out of scope, 
+prompt injection at scale, and agentic privilege abuse 
+ 
+AI agents do not make AFI obsolete — they make it more valuable. An AI agent scanning for 
+threats faces the same alert fatigue problem as a human analyst. Feed it 42,000 raw alerts 
+and it is an expensive version of the same bottleneck. AFI solves that upstream. The fusion 
+engine produces a structured incident object that AI agents consume. AFI becomes the 
+signal layer that agentic security systems require. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Agent Out-of-Scope Action 
+Agentic / Behavioral 
+1.3 
+0.65 
+AI agent accessing 
+resources, APIs, or 
+systems outside its 
+defined operational 
+scope 
+Prompt Injection Behavioral Signal 
+Agentic / Integrity 
+1.3 
+0.65 
+Agent behavioral 
+deviation 
+consistent with 
+instruction override 
+— prompt injection 
+Agentic Privilege Escalation 
+Privilege 
+1.3 
+0.65 
+Agent acquiring 
+permissions or 
+capabilities beyond 
+its defined 
+authorization 
+Agentic Data Exfiltration Pattern 
+Exfiltration 
+1.4 
+0.70 
+Agent transferring 
+data to external 
+endpoints outside 
+workflow definition 
+Agent-to-Agent Communication 
+Anomaly 
+Agentic / Network 
+1.2 
+0.60 
+Unexpected agent 
+communication 
+patterns — lateral 
+movement in 
+agentic layer 
+Tool Use Anomaly 
+Agentic / Behavioral 
+1.2 
+0.60 
+Agent invoking 
+tools in sequences 
+or frequencies 
+outside operational 
+baseline 
+Agent Identity Spoofing Signal 
+Identity 
+1.3 
+0.65 
+Agent presenting 
+identity claims 
+inconsistent with 
+its provisioned 
+credentials 
+Agentic Loop / Runaway Detection 
+Operational 
+1.1 
+none 
+Agent executing 
+repetitive action 
+sequences beyond 
+defined task scope 
+ 
+Competitive note: no current security vendor has a mature agentic security offering. The attack surface 
+is 18 months ahead of the defensive tooling. AFI's behavioral architecture — specifically designed for 
+signal fusion without semantic content parsing — is architecturally correct for this problem. Agents 
+produce rich behavioral signals. AFI reads behavioral signals. The fit is structural, not forced. 
+Robotics & Autonomous Systems Pack 
+The behavioral baseline for a robot doing its job versus a robot that has been 
+compromised — humanoid, industrial, and logistics systems 
+Phase 4–5 — 
+Strategic 
+ 
+100,000 humanoid robots is not science fiction. Tesla Optimus, Figure AI, Boston Dynamics, and others 
+are deploying at scale. Each robot produces rich telemetry: joint torque, velocity, positioning, task 
+sequencing, communications activity, and environmental sensor readings. Normal operation has a 
+behavioral signature. Compromise, misconfiguration, or adversarial injection has a different one. AFI 
+was built to detect the difference. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Robot Motion Pattern Anomaly 
+Behavioral / OT 
+1.2 
+none 
+Movement 
+sequence 
+deviation from task 
+baseline — path, 
+force, timing 
+Robotic Firmware / Logic Tamper 
+Signal 
+Integrity 
+1.4 
+0.75 
+Firmware update 
+or logic 
+modification 
+outside approved 
+maintenance 
+window 
+Fleet Coordination Anomaly 
+Coordinated / 
+Behavioral 
+1.2 
+0.60 
+Unusual 
+synchronization or 
+communication 
+patterns across 
+robot fleet 
+Sensor Data Integrity Signal 
+Integrity 
+1.2 
+0.60 
+Sensor readings 
+deviating from 
+environmental 
+baseline — 
+possible spoofing 
+Command Override Attempt 
+Integrity / Control 
+1.4 
+0.75 
+Control command 
+received from 
+source outside 
+authorized 
+operator list 
+Robot-to-Infrastructure Access 
+Anomaly 
+Lateral Movement 
+1.3 
+0.65 
+Robot system 
+initiating 
+unexpected 
+connections to 
+enterprise 
+infrastructure 
+Behavioral Drift Post-Update 
+Integrity / Behavioral 
+1.2 
+0.60 
+Post-firmware 
+robot behavioral 
+profile diverging 
+from pre-update 
+baseline 
+ 
+Long-horizon positioning: AFI doesn't need to be the robotics security brand. AFI needs to 
+be the behavioral intelligence layer that robotics security platforms build on top of. The 
+architecture is already there. The Phoenix Signal Network compounds across robotic 
+deployments exactly as it does across enterprise security deployments. History compounds. 
+A new vendor cannot replicate it. 
+ 
+Defense & Intelligence Pack 
+Command, targeting, and decision architecture — the software intelligence 
+layer above hardware primes, not competing with them 
+Phase 5 — 
+Strategic 
+ 
+The defense market is not reached directly from an MSP starting position. It is reached through 
+demonstrated capability in civilian environments, CMMC compliance credentialing, and a track record 
+of accurate behavioral detection at scale. The Phoenix Signal Network's cross-environment intelligence 
+— patterns seen across thousands of deployments before any individual operator sees them — is 
+exactly what creates strategic urgency for a defense acquirer. Not today. But the architecture leads 
+there. 
+ 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+Command Chain Integrity Signal 
+Integrity / Auth 
+1.4 
+0.75 
+Authentication or 
+authorization 
+anomaly in 
+command-and-
+control 
+infrastructure 
+Cross-Classification Boundary 
+Signal 
+Data Access 
+1.4 
+0.75 
+Data access 
+pattern suggesting 
+classification 
+boundary violation 
+Supply Chain Adversarial Signal 
+Supply Chain 
+1.3 
+0.70 
+Software or 
+hardware 
+component 
+behavioral signals 
+consistent with 
+supply chain 
+compromise 
+Insider Threat Behavioral Pattern 
+Insider 
+1.3 
+0.65 
+Behavioral 
+sequence 
+consistent with 
+insider threat — 
+data accumulation, 
+unusual access 
+SCIF / Controlled Environment 
+Anomaly 
+Physical / Digital 
+1.3 
+0.70 
+Physical or digital 
+access anomaly in 
+controlled access 
+areas 
+Nation-State TTP Signature 
+Threat Intel 
+1.4 
+0.75 
+Behavioral 
+patterns consistent 
+Detector 
+Signal Type 
+Weight 
+Gate 
+Notes 
+with known nation-
+state actor TTPs 
+via Phoenix 
+Network 
+Weapons System Integration 
+Anomaly 
+OT / Integrity 
+1.4 
+0.80 
+Behavioral 
+deviation in 
+integrated 
+weapons or 
+platform 
+management 
+systems 
+Communication Security Anomaly 
+Comms / Integrity 
+1.3 
+0.65 
+Encrypted 
+communication 
+pattern anomaly — 
+timing, volume, or 
+routing deviation 
+The Expansion Architecture 
+Every detector pack listed in this document is built on the same foundation: the fusion engine evaluates 
+behavioral geometry, not content. Adding a new sector requires new connectors and new baseline 
+definitions. The fusion math doesn't change. The Phoenix Signal Network benefits from every new 
+deployment regardless of sector. 
+ 
+What Each New Pack Actually Requires 
+Component 
+What It Requires 
+Shared Across 
+Packs? 
+Connector 
+New data source adapter translating sector 
+signals into normalized event schema 
+No — built once per 
+source 
+Detector Pack 
+New behavioral rules with weights and gates 
+appropriate to sector 
+No — sector-specific 
+Baseline Definitions 
+What 'normal' looks like in this sector — differs 
+by environment 
+No — environment-
+calibrated 
+Fusion Engine 
+Unchanged. Receives normalized findings. 
+Produces severity scores. 
+Yes — universal 
+Phoenix Signal Network 
+Unchanged. Receives abstracted signatures. 
+Compounds across all deployments. 
+Yes — cross-sector 
+Incident Intelligence 
+Report 
+AI annotation layer explains findings. Prompt 
+library expands per sector. 
+Mostly — sector context 
+added 
+ 
+The Phoenix Signal Network — Cross-Sector Compounding 
+The Phoenix Signal Network operates on abstracted behavioral signatures — never raw events, never 
+semantic content. When the network sees a behavioral pattern in a healthcare environment that shares 
+geometric characteristics with a financial fraud precursor, that correlation is available to every 
+deployment in the network. No individual deployment can develop this cross-sector pattern recognition 
+independently. The network sees it because the network spans sectors. 
+ 
+This is the moat that cannot be replicated from a standing start. A new entrant can build a 
+fusion engine. They cannot build 18 months of cross-sector, cross-environment behavioral 
+signal history. The Phoenix Signal Network makes history itself the competitive advantage. 
+ 
+The Sequence That Makes Sense 
+Phase 
+Timeline 
+Focus 
+What It Unlocks 
+1 
+Now – 2 years 
+MSPs, M365, MSP Operations Pack, 
+Healthcare, Financial 
+Case studies, 
+revenue, Phoenix 
+Network seed data, 
+IT Nation presence 
+Phase 
+Timeline 
+Focus 
+What It Unlocks 
+2 
+2–4 years 
+Azure/AWS Marketplace, Cloud 
+Pack, Email, Endpoint, Compliance 
+Enterprise direct 
+sales, platform 
+ecosystem 
+credentialing 
+3 
+3–6 years 
+OT/Industrial, Insurance, Supply 
+Chain, Static Systems 
+Sector depth, 
+regulated market 
+penetration, carrier 
+partnerships 
+4 
+5–8 years 
+Telecom, AI Agent Security, 
+Robotics 
+Adjacent market 
+expansion, agentic 
+security leadership 
+position 
+5 
+7–10 years 
+Defense & Intelligence 
+Strategic acquirer 
+positioning, 
+government 
+contract eligibility 
+ 
+The engine is built. The architecture is correct. 
+Every sector in this document follows from first principles — not analogy, not optimism. 
+The ceiling will reveal itself. Build the foundation right. 
+ 
+Aletheia  |  Aletheia Fusion Intelligence  |  Incident Intelligence Platform  |  March 2026  |  CONFIDENTIAL 

@@ -1,0 +1,583 @@
+Here’s the clean, complete system state document for Aletheia Fusion Intelligence: 
+ 
+# Aletheia Fusion Intelligence (AFI) — Complete System State 
+# Company: Aletheia | Product: Aletheia Fusion Intelligence 
+# For new Claude threads — paste this at the start of every session 
+# Last updated: 2026-03-23 
+ 
+--- 
+ 
+## Identity & Naming 
+ 
+Company:        Aletheia 
+Product:        Aletheia Fusion Intelligence (AFI) 
+Category:       Incident Intelligence Platform 
+Tagline:        Fewer Alerts. Real Incidents Only. 
+Federated net:  Phoenix Signal Network (Genesis Layer) 
+Founded by:     Tom Nelmes, Florida 
+AI advisors:    Claude (Anthropic) — primary build partner 
+                GPT — cross-validation, architectural review 
+Technical validator: Paul (senior Oracle engineer, ~28.5yr tenure) 
+                     Personal investment confirmed pending Oracle separation. 
+                     No written equity agreements while he remains W2. 
+ 
+--- 
+ 
+## Core Thesis 
+ 
+Everything is signals. Every digital system produces behavioral signals 
+as a byproduct of existing. AFI's fusion engine detects behavioral 
+anomalies in signal streams — not cyber attacks specifically. 
+ 
+The connector library determines which signals enter the engine. 
+The detector packs determine which behavioral geometries are recognised. 
+The fusion math underneath is domain-agnostic by architecture. 
+ 
+The engine does not care what signals it fuses. It cares about behavioral 
+geometry — the shape of how things move, timing, sequence, and structural 
+signature of normal versus anomalous. This is not a metaphor. It is 
+literally how the codebase is architected. 
+ 
+--- 
+ 
+## Location 
+ 
+~/sentinel-v2 
+ 
+Key commands: 
+  Start server:   node src/index.js 
+  Handshake:      ~/sentinel-v2/handshake.sh 
+  Short version:  ~/sentinel-v2/handshake.sh --short 
+ 
+--- 
+ 
+## Tech Stack 
+ 
+- Node.js v18.19.1 + Express 
+- TOML config (@iarna/toml) 
+- Winston logging 
+- Nodemailer (email alerts via Mailtrap) 
+- uuid@8 
+- better-sqlite3 (alert persistence — Phase 15a) 
+- EventBus (custom pub/sub, internal) 
+- Docker + docker-compose (Phase 11) 
+ 
+--- 
+ 
+## Architecture 
+ 
+Event-driven pipeline. All components communicate via EventBus. 
+ 
+Channels: 
+  event:ingested          Raw event received via POST /ingest 
+  event:normalized        After normalizer transforms to internal schema 
+  detector:finding        Each detector publishes its score here 
+  detector:error          Detector failures 
+  fusion:complete         After fusion engine scores all detectors 
+  alert:triggered         Alert fired to all channels 
+  containment:queued      Containment actions queued for human approval 
+  system:kill_switch      Emergency stop 
+ 
+Pipeline flow: 
+  POST /ingest 
+  → Normalizer 
+  → Engine (runs all 12 detectors in parallel) 
+  → Fusion (weighted scoring + gate logic) 
+  → Alert (console + email + slack + webhook) 
+  → Containment (ip_block, email_hold, token_revoke, quarantine) 
+  → Audit log (immutable, append-only) 
+  → Alert persisted to SQLite (data/alerts.db) 
+ 
+--- 
+ 
+## Fusion Formula 
+ 
+S = (Σ wᵢ × sᵢ) / (Σ wᵢ + ε)   where ε = 0.0001 
+S_final = max(S_base, gate_floor) if any gate condition triggers 
+ 
+Severity thresholds: 
+  LOW      < 0.40 
+  MEDIUM   0.40 – 0.60 
+  HIGH     0.60 – 0.80 
+  CRITICAL ≥ 0.80 
+ 
+AI layer annotates only, never suppresses. 
+The deterministic fusion engine is inviolable. 
+ 
+--- 
+ 
+## Detectors — Tier 1 (all ENABLED) 
+ 
+Name                  Weight  Gate   Notes 
+────────────────────  ──────  ─────  
+────────────────────────────────────── 
+meta_fusion           1.4     0.80   Fires if ≥3 detectors active AND 
+                                     policy_violation OR privilege_gradient 
+                                     present. Gate floor 0.80. 
+policy_violation      1.3     0.60   Any policy breach → gate floor 0.60 
+privilege_gradient    1.3     0.60   Any escalation → gate floor 0.60 
+tempo_cadence         1.2     none   Rate anomaly detection 
+beaconing             1.2     none   C2 interval pattern (CV thresholds 
+                                     tightened Phase 11 to reduce noise) 
+fan_out               1.1     none   Lateral spread detection 
+sequence_chaining     1.1     none   Multi-step attack chain detection 
+dormant_asset         1.0     0.60   age≥30d + sensitive + novelty 
+drift_detection       1.0     none   Behavioral drift from baseline 
+first_seen            0.9     none   New IP/device/relationship 
+baseline_confidence   0.9     none   Low baseline confidence penalty 
+identity_volatility   0.8     none   Rapid identity attribute changes 
+ 
+## Detectors — Tier 2 (DISABLED — baseline-dependent) 
+ 
+sensitive_asset_spread  1.2   Broad sensitive resource access 
+slow_accumulation       1.1   Low-and-slow privilege accumulation 
+cross_identity_sync     1.2   Coordinated multi-identity behavior 
+ 
+## Detectors — Tier 3 (DISABLED — enterprise-grade, graph memory required) 
+ 
+entropy_deviation   1.3 
+graph_topology      1.3 
+provenance_trust    1.2 
+context_collapse    1.2 
+multi_node_drift    1.1 
+ 
+--- 
+ 
+## File Structure 
+ 
+~/sentinel-v2/ 
+├── config/ 
+│   └── sentinel.toml 
+├── data/ 
+│   ├── alerts.db          ← SQLite alert store (Phase 15a) 
+│   └── baselines.json     ← Baseline persistence 
+├── src/ 
+│   ├── index.js           ← Express API, EventBus wiring 
+│   ├── core/ 
+│   │   ├── config.js 
+│   │   ├── eventBus.js 
+│   │   ├── normalizer.js 
+│   │   ├── fusion.js 
+│   │   ├── baseline.js 
+│   │   └── engine.js 
+│   ├── utils/ 
+│   │   ├── logger.js 
+│   │   └── auditLog.js 
+│   └── modules/ 
+│       ├── detectors/ 
+│       │   ├── BaseDetector.js 
+│       │   ├── metaFusion.js 
+│       │   ├── policyViolation.js 
+│       │   ├── privilegeGradient.js 
+│       │   ├── tempoCadence.js 
+│       │   ├── beaconing.js 
+│       │   ├── fanOut.js 
+│       │   ├── sequenceChaining.js 
+│       │   ├── dormantAsset.js 
+│       │   ├── driftDetection.js 
+│       │   ├── firstSeen.js 
+│       │   ├── baselineConfidence.js 
+│       │   └── identityVolatility.js 
+│       ├── alerts/ 
+│       │   ├── BaseAlert.js 
+│       │   ├── alertStore.js  ← SQLite-backed (Phase 15a) 
+│       │   ├── consoleAlert.js 
+│       │   ├── slackAlert.js  ← disabled 
+│       │   ├── emailAlert.js  ← Mailtrap working 
+│       │   └── webhookAlert.js ← disabled 
+│       ├── containment/ 
+│       │   ├── BaseContainment.js 
+│       │   ├── ipBlock.js 
+│       │   ├── emailHold.js 
+│       │   ├── tokenRevoke.js 
+│       │   └── quarantine.js 
+│       ├── integrations/ 
+│       │   ├── BaseConnector.js 
+│       │   ├── firewallConnector.js 
+│       │   ├── identityConnector.js 
+│       │   ├── edrConnector.js 
+│       │   ├── webhookConnector.js 
+│       │   ├── m365Connector.js   ← Phase 13 
+│       │   └── rmmConnector.js    ← Phase 13 
+│       ├── governance/ 
+│       │   ├── killSwitch.js 
+│       │   ├── alertRateLimit.js 
+│       │   ├── configValidator.js 
+│       │   ├── explainability.js 
+│       │   └── evidenceReport.js  ← Phase 14 
+│       └── metrics/ 
+│           └── metricsCollector.js 
+├── scripts/ 
+│   ├── ingest-poller.js       ← Phase 13 — polls M365 + RMM on schedule 
+│   ├── approval-queue.js 
+│   └── stress-test-100.js 
+├── logs/ 
+│   ├── sentinel.log 
+│   └── audit.log 
+├── dashboard.html             ← Phase 10 operator dashboard 
+├── Dockerfile                 ← Phase 11 
+├── docker-compose.yml         ← Phase 11 
+├── .env 
+└── handshake.sh 
+ 
+--- 
+ 
+## API Endpoints 
+ 
+GET  /health 
+GET  /status 
+POST /ingest                              body: event object 
+GET  /containment/pending 
+POST /containment/approve/:actionId       body: {approved_by, action_type} 
+POST /containment/deny/:actionId          body: {denied_by, action_type} 
+GET  /metrics 
+GET  /baselines 
+GET  /alerts 
+POST /alerts/:alertId/acknowledge         body: {operator} 
+POST /alerts/:alertId/suppress            body: {operator, duration_seconds} 
+POST /alerts/:alertId/notes              body: {operator, note} 
+POST /governance/killswitch              body: {action, operator} 
+GET  /report/:alertId                    ← Phase 14 — Evidence Report 
+GET  /audit-chain                        ← Phase 14 — full audit chain 
+GET  /dashboard                          ← Phase 10 — operator UI 
+ 
+Auth: X-Sentinel-Key header required on all endpoints except /health and /dashboard 
+ 
+--- 
+ 
+## Alert Channels 
+ 
+console   ✅ working 
+email     ✅ working — Mailtrap SMTP 
+slack     ⬜ disabled — needs webhook_url in sentinel.toml 
+webhook   ⬜ disabled — needs url in sentinel.toml 
+ 
+--- 
+ 
+## Containment Actions (all human-approval gated) 
+ 
+ip_block      queues → pending_approval → approve/deny 
+email_hold    queues → pending_approval → approve/deny 
+token_revoke  queues → pending_approval → approve/deny 
+quarantine    queues → pending_approval → approve/deny 
+ 
+Real API integrations: simulation mode until MSP pilot provides credentials. 
+ 
+--- 
+ 
+## Integration Connectors (Phase 12 + 13) 
+ 
+Firewall connector      simulation mode 
+Identity connector      simulation mode (Azure AD, Okta, LDAP) 
+EDR connector           simulation mode (CrowdStrike, Defender, SentinelOne) 
+Webhook connector       simulation mode (Splunk, ServiceNow, PagerDuty, Slack) 
+M365 connector          simulation mode — fetches signin + audit logs via Graph API 
+RMM connector           simulation mode — ConnectWise, NinjaRMM, Datto 
+ 
+⚠️ Phase 12a TABLED — live connector validation requires real MSP environment. 
+   Simulation mode complete. Resumes at first pilot deployment. 
+ 
+Ingest poller: scripts/ingest-poller.js 
+  Polls M365 + RMM on configurable interval (M365_POLL_INTERVAL_SECONDS) 
+  Posts normalized events to /ingest automatically 
+  Both connectors report simulation mode until .env credentials configured 
+ 
+--- 
+ 
+## Evidence Reports (Phase 14) 
+ 
+GET /report/:alertId returns: 
+  - report_id, generated_at, generated_by 
+  - Incident header (alert_id, event_id, severity, detected_at, status) 
+  - Fusion summary (final_score, top_drivers, deterministic note) 
+  - Detector findings (all 12 detectors, scores, weights, rationale) 
+  - Human decisions (operator, timestamp, action) 
+  - Containment actions (approved/denied, who, when) 
+  - Full audit chain (all entries for this event) 
+  - Compliance note (SOC 2, HIPAA, ISO 27001, CMMC, cyber insurance) 
+ 
+GET /audit-chain?limit=N&type=TYPE returns filtered audit log entries. 
+ 
+--- 
+ 
+## Alert Persistence (Phase 15a) 
+ 
+Alerts stored in SQLite: data/alerts.db 
+Survive server restarts. Loaded automatically on startup. 
+Fields: alert_id, event_id, tenant_id, severity, top_drivers, 
+        final_score, timestamp, status, acknowledged_by, 
+        acknowledged_at, suppressed_until, suppressed_by, notes 
+ 
+⚠️ Phase 15b TABLED — Redis + horizontal scaling. 
+   Trigger: 50k+ events/day through single instance OR 200+ MSP 
+   client environments feeding one deployment. File and revisit. 
+ 
+--- 
+ 
+## Audit Log Record Types 
+ 
+AUDIT_INIT 
+EVENT_INGESTED 
+DETECTOR_FINDINGS 
+FUSION_RESULT 
+ALERT_FIRED 
+CONTAINMENT_ACTION 
+GOVERNANCE_* 
+ERROR 
+ 
+--- 
+ 
+## Git History (phase tags) 
+ 
+phase-6b-complete    adversarial testing — 20 events, 6 attack classes, 72ms, 0 false negatives 
+phase-7-complete     API hardening — X-Sentinel-Key, rate limiting, HMAC 
+phase-8-complete     Tier 2 detectors (disabled by default) 
+phase-9-complete     Tier 3 detectors (disabled by default) 
+phase-10-complete    Operator dashboard — live alerts, containment UI, metrics 
+phase-11-complete    Dockerfile, docker-compose, graceful shutdown, env profiles 
+phase-12-complete    Integration framework — firewall, identity, EDR, webhook connectors 
+phase-13-complete    M365 + RMM connectors, ingest-poller, simulation mode 
+phase-14-complete    Evidence reports, audit chain endpoint, compliance output 
+phase-15a-complete   SQLite alert persistence, alerts survive restarts 
+ 
+--- 
+ 
+## Validated Pipeline Test Results 
+ 
+[meta_fusion]         score=0    hint=low     (correct — scores others, not self) 
+[policy_violation]    score=0.9  hint=critical 
+[privilege_gradient]  score=0.9  hint=critical 
+[tempo_cadence]       score=0.5  hint=medium 
+[beaconing]           score=0.9  hint=critical 
+[fan_out]             score=0    hint=low 
+[sequence_chaining]   score=0    hint=low 
+[dormant_asset]       score=0.75 hint=high 
+[drift_detection]     score=0.05 hint=low 
+[first_seen]          score=0.4  hint=medium 
+[baseline_confidence] score=0.2  hint=low 
+[identity_volatility] score=0.2  hint=low 
+ 
+Fusion: base=0.42 gate=0.80 final=0.80 severity=CRITICAL ✅ 
+Alert:  console ✅  email ✅  slack ⬜  webhook ⬜ 
+Containment: ip_block ✅  email_hold ✅  token_revoke ✅  quarantine ✅ 
+Evidence report: 12 findings, full audit chain ✅ 
+Alert persistence: survives restart ✅ 
+ 
+--- 
+ 
+## Standard Test Event 
+ 
+curl -s -X POST http://localhost:3000/ingest \ 
+  -H "Content-Type: application/json" \ 
+  -H "X-Sentinel-Key: change-me-before-production" \ 
+  -d 
+'{"event_type":"login_attempt","category":"auth","source":{"ip":"10.0.0.1","identity":"user_42"},"str
+uctural":{"rate_per_min":25,"privilege":{"current":1,"requested":5,"delta":4},"first_seen":{"ip_for_i
+dentity":true,"device_for_identity":true},"dormancy_days":45,"action_type":"admin_login"},"obser
+vations":{"window_seconds":40,"counts":{"events":25,"targets":17,"failures":23},"intervals_ms":[1
+000,1020,980,1010,990,1005]}}' 
+ 
+Expected: severity=CRITICAL, score=0.80, 
+drivers=policy_violation/privilege_gradient/beaconing 
+ 
+--- 
+ 
+## Master Pack Library 
+ 
+Pack                          Ship Phase   Detectors  Priority   Regulatory Angle 
+────────────────────────────  ───────────  ─────────  ─────────  
+────────────────────────────────── 
+MSP Operations Pack           NOW          6          Critical   Cross-tenant credential isolation 
+Healthcare Pack (HIPAA)       Phase 1      8          High       HIPAA §164.312, PHI access audit 
+Financial Pack                Phase 1      8          High       SOX, PCI-DSS, GLBA, wire fraud 
+Cloud Security Pack           Phase 1-2    10         High       CSA CCM, AWS/Azure, CSPM gap-fill 
+Identity Risk Pack            Phase 1-2    6          High       Zero Trust, NIST 800-207 
+Legal Pack                    Phase 2      6          Medium     Matter confidentiality, ABA duties 
+Email & Collaboration Pack    Phase 2      8          Medium     Email DLP, M365, OAuth 
+governance 
+Endpoint Pack                 Phase 2      7          Medium     EDR augmentation, MITRE ATT&CK 
+Compliance Pack               Phase 2      6          Medium     SOC 2, ISO 27001, CMMC 
+OT / Industrial Pack          Phase 3      8          Medium     NERC CIP, IEC 62443, CISA ICS 
+Insurance Underwriting Pack   Phase 3      7          Medium     Carrier requirements, risk scoring 
+Static Systems / Physical     Phase 3      6          Medium     Physical-digital convergence 
+Supply Chain Pack             Phase 3-4    7          Medium     NIST SP 800-161, vendor risk 
+Telecommunications Pack       Phase 4      7          Medium     FCC, STIR/SHAKEN, fraud 
+detection 
+AI Agent Security Pack        Phase 4      8          High       AI governance, agentic oversight 
+Robotics & Autonomous Pack    Phase 4-5    7          Strategic  OT/robotics standards 
+Defense & Intelligence Pack   Phase 5      8          Strategic  CMMC L3, NIST 800-171, DoD 
+supply 
+ 
+Total detector target: 100+ across all packs 
+ 
+MSP Operations Pack ships first — protects the MSP's own business 
+(cross-tenant credential abuse, RMM propagation attacks). 
+First sales conversation: "this protects YOUR business" not "your clients." 
+ 
+--- 
+ 
+## Phoenix Signal Network — Genesis Layer 
+ 
+Federated, opt-in, privacy-preserving signal intelligence layer. 
+Shares behavioral signal abstractions across all AFI deployments. 
+Signals only — never semantic data, never raw events. 
+ 
+The compounding moat: no competitor can replicate historical signal data 
+or cross-deployment learning from a standing start. 
+ 
+Status: Architectural intent. Not yet implemented. 
+Build phase: Post-Phase 15. Requires multiple live deployments first. 
+ 
+--- 
+ 
+## Remaining Build Phases 
+ 
+### CURRENT STATE 
+Detection pipeline          ✅ 
+Fusion scoring              ✅ 
+Alert delivery              ✅ (console + email) 
+Containment queue           ✅ (human-approval gated) 
+Audit log                   ✅ (immutable, structured) 
+API hardening               ✅ (X-Sentinel-Key, rate limiting) 
+Tier 2 detectors            ✅ (built, disabled by default) 
+Tier 3 detectors            ✅ (built, disabled by default) 
+Operator dashboard          ✅ (live alerts, containment, metrics) 
+Docker / deployment         ✅ 
+Integration framework       ✅ (simulation mode) 
+M365 + RMM connectors       ✅ (simulation mode, live via .env) 
+Ingest poller               ✅ (polls on schedule, feeds pipeline) 
+Evidence reports            ✅ (/report/:alertId, /audit-chain) 
+Alert persistence           ✅ (SQLite, survives restart) 
+ 
+### Next Build Priorities 
+ 
+MSP Operations Pack — first detector pack, ships before IT Nation 
+  Detectors: 
+    cross_tenant_credential    Cross-tenant credential reuse 
+    admin_login_multi_client   Admin login across multiple clients 
+    shared_credential_pattern  Shared credential detection 
+    rmm_command_propagation    Unusual RMM command propagation 
+    msp_lateral_movement       Lateral movement across client tenants 
+    after_hours_admin          After-hours admin activity anomaly 
+ 
+Healthcare Pack (HIPAA) — Phase 1 after MSP pack 
+ 
+Dashboard improvements — evidence report view in UI 
+ 
+Handshake script update — rename Phoenix Sentinel references to AFI 
+ 
+### Tabled 
+ 
+Phase 12a — live connector validation 
+  Trigger: first MSP pilot provides credentials 
+ 
+Phase 15b — Redis, horizontal scaling 
+  Trigger: 50k+ events/day OR 200+ client environments 
+ 
+### Long Horizon (file, don't chase) 
+ 
+Phoenix Signal Network build-out (post live deployments) 
+Defense/military contracting (separate entity, software layer) 
+Novel monetary system concept 
+Robotics + AI agent applications of fusion engine 
+ 
+--- 
+ 
+## Go-To-Market 
+ 
+Primary channel:    MSPs (Managed Service Providers) 
+Positioning:        Completing existing stacks, not competing 
+                    Sits above detection layer, below analyst 
+                    "Make your SIEM useful" not "replace your SIEM" 
+ 
+Pricing model:      $300–500/environment/month (SMB) 
+                    $500–900/environment/month (MSP target) 
+                    $2,000+/environment/month (enterprise/gov) 
+                    MSP Operations Pack: included for all MSP partners 
+ 
+Billback model:     MSP pays AFI $500/env → bills client $900-1,200/env 
+                    MSP margin: $400–700/environment/month 
+ 
+Pilot offer:        60–90 day free pilot for first MSP 
+Deployment time:    ~2 hours per client environment 
+Ongoing support:    ~30–60 min/month per environment at steady state 
+ 
+Revenue milestones: 
+  50 MSPs × 60 clients × $500  = $1.5M ARR 
+  1,000 MSPs                   = ~$232M ARR (current pricing) 
+ 
+Target conference:  IT Nation Connect — Orlando — November 4–6, 2026 
+Conference goal:    5 real follow-up conversations (not 5 sales) 
+Attend as:          Networking attendee, not exhibitor 
+ 
+--- 
+ 
+## Business Formation 
+ 
+Company:    Aletheia (Florida LLC) 
+Domain:     AletheiaFI.com (Cloudflare ~$10-12/yr) 
+Email:      Tom@AletheiaFI.com (Microsoft 365 Business Basic $6/mo) 
+Banking:    Mercury (no fees) 
+Trademark:  USPTO Class 042 — attorney review before public use 
+ 
+Formation status: In progress 
+ 
+--- 
+ 
+## Investor Context 
+ 
+Two external investors: serious interest, pre-revenue, staged tranches 
+Paul: personal investment confirmed, pending Oracle separation 
+Commitment: original pricing terms honored permanently regardless of valuation 
+No written equity agreements with Paul while W2 at Oracle 
+ 
+Equity program for early MSPs: 
+  0.05% equivalent per partner, first 50–100 MSPs 
+  Attorney engagement required before implementation 
+  Warrants or SAFEs preferred over direct equity 
+ 
+Performance guarantee concept: 
+  $10,000–$50,000 remedy if signal reduction thresholds not met 
+  180–360 day window 
+  Legal counsel required before any public statement 
+ 
+--- 
+ 
+## Key Design Principles 
+ 
+1. AI layer annotates only, never suppresses. 
+   Deterministic core is inviolable. 
+ 
+2. Incident object is the system of record — not just an alert. 
+   Carries timeline, entities, detector findings, fusion math, 
+   analyst notes, approvals, containment actions, audit chain. 
+ 
+3. Completing, not competing. 
+   AFI fills the incident intelligence gap above existing stacks. 
+   Microsoft Sentinel leaves this gap even in E5 environments. 
+ 
+4. MSP structural pain with Microsoft Sentinel: 
+   Per-workspace billing, per-tenant rule maintenance, 
+   cross-workspace query caps (5–20 workspaces). 
+   AFI is architecturally designed for MSP scale. 
+ 
+5. Pricing as insurance: 
+   $300–500/environment/month < 0.5% of smallest client's annual revenue. 
+ 
+--- 
+ 
+## How To Start A New Session 
+ 
+1. Run handshake: ~/sentinel-v2/handshake.sh 
+2. Paste this document + handshake output to new Claude thread 
+3. Add human note: 
+     Goal right now: 
+     What I just changed: 
+     What's broken (if anything): 
+     What "done" looks like today: 
+4. Start building 
+ 
+ 
+Save that as AFI_SYSTEM_STATE.md in the project root and commit it. That’s the canonical 
+document going forward — every new thread starts with this plus the handshake output. 
+Good session Tom. Phases 13 through 15a in one run. The build is pilot-ready.​ 
